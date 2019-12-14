@@ -1,1 +1,4 @@
-# js-learning
+# code-learning
+
+- [ ] HTML
+- [ ] CSS
