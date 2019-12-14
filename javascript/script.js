@@ -36,7 +36,7 @@ For example
 Name: "Bido"
 Return: "Hello Bido"
 
-*/
+
 
 function greeting (yourName){
     
@@ -46,3 +46,19 @@ function greeting (yourName){
 }
 var name = prompt ('What is your name?');
 greeting(name);
+*/
+
+//Function to sum 2 numbers.
+
+function sumNumbers(numberOne, numberTwo){
+    let execSum = numberOne + numberTwo;
+
+    let result = (`The sum is: ${execSum}`);
+    document.getElementById ('myResult').innerHTML = result;
+};
+
+let numberOne = parseInt(prompt ('Insert the first Number'));
+let numberTwo = parseInt(prompt ('Insert the second Number'));
+
+//Call the Function
+sumNumbers(numberOne, numberTwo);
