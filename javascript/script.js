@@ -48,7 +48,7 @@ var name = prompt ('What is your name?');
 greeting(name);
 */
 
-//Function to sum 2 numbers.
+/*Function to sum 2 numbers.
 
 function sumNumbers(numberOne, numberTwo){
     let execSum = numberOne + numberTwo;
@@ -62,3 +62,32 @@ let numberTwo = parseInt(prompt ('Insert the second Number'));
 
 //Call the Function
 sumNumbers(numberOne, numberTwo);
+*/
+
+//Loops
+
+//while loop
+/*
+let num = 0;
+
+while (num < 100) {
+    num+=1;
+    console.log(num);
+}
+*/
+
+
+//For loop
+/*
+for (let i = 0; i < 50; i++){
+    console.log(i);
+    for (let j = 0; j < 10; j++){
+        console.log(j);
+
+        for (let k = 0; k < 5; k++)
+        {
+            console.log(k);
+        }
+    }
+}
+*/
