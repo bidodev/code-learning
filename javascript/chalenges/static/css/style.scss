@@ -1,0 +1,24 @@
+$padding: 10px;
+
+.container {
+    border: 1px solid black;
+    margin-top: 50px;
+    width: 70%;
+    text-align: center;
+
+}
+
+.flex-box-container-1{
+    display: flex;
+    border: 1px solid black;
+    padding: $padding;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+        display: flex;
+        padding: $padding;
+        border: 1px solid black;
+        align-items: center;
+    }
+}
