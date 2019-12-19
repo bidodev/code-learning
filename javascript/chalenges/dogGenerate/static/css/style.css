@@ -1,23 +1,19 @@
-body {
-  background-color: brown;
-}
-
-
 .container {
   border: 2px solid black;
-  /*
-    button {
-        
-    }
-    */
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .container h2 {
-  color: white;
+  color: brown;
   font-size: 5em;
 }
 
 .container .flexbox-container {
-  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */
