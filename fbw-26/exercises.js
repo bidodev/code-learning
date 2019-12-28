@@ -20,11 +20,37 @@ console.log(addUp(21));
     "There is one bottle of beer on the wall."
     "There are two bottles of beer on the wall" up until there are five bottles.
 */
+for (let count = 1; count < 6; count++) {
+    switch (count) {
+        case 1:
+            console.log(`There is ${count} beer on the wall`);
+            break;
+
+        default:
+            console.log(`There are ${count} beers on the wall`);
+    }
+
+}
+
+/*
+The odd/even reporter. Write a program that will iterate from 0 to 20. 
+For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
+*/
+for (count = 0; count < 21; count++) {
+    //check if its even or odd..
+    // if the rest from count % 2 is differ 0, then the number is a odd (impar)
+
+    count % 2 != 0 ? console.log(`The number ${count} is a odd`) : console.log(`The number ${count} is a even`);
+
+    /*
+    condition ? value if true : value if false
+    The Conditional (Ternary) Operator
+    */
+}
+
 
 
 /*
-The odd/even reporter. Write a program that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
-
 Multiplication Tables. Write a program that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18"). Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
 
 Fizz Buzz Write a program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
