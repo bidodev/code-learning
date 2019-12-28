@@ -49,12 +49,41 @@ for (count = 0; count < 21; count++) {
 }
 
 
+/*
+Multiplication Tables. Write a program that will iterate from 0 to 10. For each iteration of the for loop, 
+it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18"). 
+Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
+
+*/
+
+for (count = 0; count < 11; count++){
+    mult = 2 * count;
+    console.log(` 2 * ${count} = ${mult}`);
+    
+    for (j = 0; j < 11; j++) {
+        result = 1 * j;
+        console.log(` 1 * ${j} = ${result}`);
+    }
+}
 
 /*
-Multiplication Tables. Write a program that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18"). Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
 
 Fizz Buzz Write a program which iterates the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
 
+*/
+for (count = 0; count < 101; count++){
+    if (count % 3 == 0){
+    console.log (`${count} fizz`);
+    }
+    if (count % 5 == 0){
+        console.log (`${count} Buzz`);
+    }
+    if (count % 15 == 0){
+        console.log (`${count} FizzBuzz`);
+    }
+
+}
+/*
 Sum of Multiples Write a program to add the multiples of 3 and 5 under 1000.
 
 Bonus
