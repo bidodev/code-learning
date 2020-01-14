@@ -50,6 +50,9 @@ var myPlants = [
   }
 ];
 
-// Only change code below this line
+var secondTree = myPlants[1].list[1];
+//first we do acess the array myPlants. We have a object on index 0 and other on the index 1.
+//If we want to acess tree we have to go to the second object (index 1)
+//To acess the second plant, we have to get the item on the index 1
 
-var secondTree = ""; // Change this line
+console.log(secondTree);
