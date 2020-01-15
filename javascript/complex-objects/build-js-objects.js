@@ -13,9 +13,17 @@ let myCat = {
   enemies: ["dog", "rat"]
 };
 
-//2. Print out the cat enemies..
-console.log(myCat.enemies);
+var myDog = {
+  name: "Lulu",
+  legs: 4,
+  tails: 1,
+  friends: ["water", "cat"]
+};
 
-//3. Add a new enemy and print it out..
-myCat.enemies["water"];
-console.log(myCat.enemies);
+//2. Add a new enemy and print it out..
+myCat.enemies.push("water");
+
+//3. Print out the cat enemies..
+for (i = 0; i < myCat.enemies.length; i++) {
+  console.log(myCat.enemies[i]);
+}
