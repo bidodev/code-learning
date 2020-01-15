@@ -27,7 +27,7 @@ function triangleArea(sideA, sideB, sideC) {
         (perimeter - sideA) *
         (perimeter - sideB) *
         (perimeter - sideC)
-    ))
+    ).toFixed(3))
   );
 }
 
@@ -84,4 +84,28 @@ console.log(
 console.log(
   `The final value is`,
   finalBill(bills.thirdBill.value, bills.thirdBill.tipPercentage).toFixed(2)
+);
+
+// Heron's formula finds the area of a triangle of which all its sides are known.
+// The area is calculated from the semi-perimeter of the triangle s and the length of the sides (a, b and c).
+
+let sides = {
+  a: 10,
+  b: 10,
+  c: 15
+};
+
+//calculate the semiPerimeter
+let semiPerimeter = (sides.a + sides.b + sides.c) / 2;
+
+let areaResult = Math.sqrt(
+  semiPerimeter *
+    (semiPerimeter - sides.a) *
+    (semiPerimeter - sides.b) *
+    (semiPerimeter - sides.c)
+);
+
+//The Math.sqrt() function is used to get the square root of a number. If the value of the number is negative, Math.sqrt() returns NaN.
+console.log(
+  `The area of a triagle with 3 differ sides is ${areaResult.toFixed(1)}cm²`
 );
