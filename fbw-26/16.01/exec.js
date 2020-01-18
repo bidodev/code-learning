@@ -1,28 +1,40 @@
-/* Exercises */
+//Exercises
+
+//////////////////////////////////////////////////
+//1, 2, 4, 8... 128
+let result = null;
+
+for (let i = 0; result < 128; i++) {
+  result = 2 ** i; //exponentiation operator
+  console.log(result);
+}
+
 // 1, 2, 4, 8... 128
 for (let i = 1; i <= 128; ) {
   console.log(i);
   i *= 2;
 }
 
+//////////////////////////////////////////////////
 // 0, 2, 4... 10
 for (let i = 0; i < 11; ) {
   console.log(i);
   i += 2;
 }
-
+//////////////////////////////////////////////////
 // // 3, 6, 9 ... 15
 for (let i = 3; i < 16; ) {
   console.log(i);
   i += 3;
 }
 
+//////////////////////////////////////////////////
 // // 9, 8, 7... 0
 for (let i = 10; i >= 0; ) {
   console.log(i);
   i--;
 }
-
+//////////////////////////////////////////////////
 // 1 1 1 2 2 2 3 3 3 4 4 4
 let string = "";
 
@@ -38,7 +50,7 @@ for (i = 1; i < 5; i++) {
   }
 }
 console.log(string);
-
+//////////////////////////////////////////////////
 // console.log(string);
 // let string = "";
 
@@ -51,6 +63,7 @@ for (i = 0; i < 4; i++) {
 }
 console.log(box);
 
+//////////////////////////////////////////////////
 /*
  AAAA
  AAA
@@ -58,6 +71,18 @@ console.log(box);
  A
 
  */
+let string = "A";
+let newstring = "";
+
+for (let i = 4; i > 0; i--) {
+  newstring = "";
+  for (let j = 0; j < i; ) {
+    newstring += string[0];
+    j++;
+  }
+  console.log(newstring);
+}
+
 let myString = "AAAA";
 
 for (let i = myString.length; i > 0; i--) {
@@ -78,7 +103,7 @@ console.log(res); //will return the word Hello
 5 interaction: i = 0; 0 > 0 (false) 
 
 */
-
+//////////////////////////////////////////////////
 /* Create the follow shape...
 t
 tt
