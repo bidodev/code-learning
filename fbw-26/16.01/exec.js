@@ -111,7 +111,7 @@ ttt
 tttt
 */
 
-let myString = "tttt";
+let myString = "TTTT";
 
 for (let i = 0; i <= myString.length; i++) {
   console.log(myString.substr(0, i));

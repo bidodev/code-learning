@@ -1,5 +1,11 @@
-// 1, 2, 4, 8... 128
-for (let i = 1; i <= 128; ) {
-  console.log(i);
-  i *= 2;
+let string = "A";
+let newstring = "";
+
+for (let i = 4; i > 0; i--) {
+  newstring = "";
+  for (let j = 0; j < i; ) {
+    newstring += string[0];
+    j++;
+  }
+  console.log(newstring);
 }

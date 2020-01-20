@@ -32,7 +32,7 @@ function triangleArea(sideA, sideB, sideC) {
 }
 
 //  5. Calculate the volume of a cube. Length of each side is 9cm.
-const columeCube = value => {
+const volumeCube = value => {
   return value ** 3;
 };
 
@@ -70,7 +70,7 @@ console.log(`\nThe area of a square with a side of ${5} is`, squareArea(5));
 triangleArea(5, 6, 7);
 
 //  5. Calculate the volume of a cube. Length of each side is 9cm.
-console.log(`\nThe volume of a Cube is`, columeCube(5));
+console.log(`\nThe volume of a Cube is`, volumeCube(5));
 
 //  6. Calculate the three bills including tips: €22.35 + 10% tip €26.67 + 15% tip €35.92 + 20% tip
 console.log(
