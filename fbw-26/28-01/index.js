@@ -37,7 +37,7 @@ const monthNames = [
 function nameOfThatMonthEasyWay(num) {
   let result = "";
 
-  let newNum = num - 1; // what is -1 ???
+  let newNum = num - 1;
   if (num >= 1 && num <= 12) {
     result = monthNames[newNum];
   } else {
