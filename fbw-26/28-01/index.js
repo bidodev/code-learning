@@ -160,9 +160,11 @@ const average = array => {
   } else if (finalNote > 80 && finalNote < 85) {
     return "B";
   } else if (finalNote > 85 && finalNote < 90) {
-    return "C";
-  } else {
+    return "A";
+  } else if (finalNote > 90) {
     return "A+";
+  } else {
+    return "Error in the result";
   }
 };
 console.log(average(notes));

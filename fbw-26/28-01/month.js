@@ -1,11 +1,11 @@
-/* Create a function that accepts a text from user and check if the user has entered a month name, 
+/* Create a function that accepts a text from user and check if the user has entered a month name,
 if so print out that month and in which season it is.
 */
 
 function isMonth(str) {
   // Convert string to lowercase
   str = str.toLowerCase().split(" ");
-  console.log(str);
+  // console.log(str);
 
   // Initialize array of months
   const months = [
@@ -59,4 +59,4 @@ function isMonth(str) {
   }
 }
 
-console.log(isMonth("the best march the best"));
+console.log(isMonth("mauricio hates june because its hot.."));
