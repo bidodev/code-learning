@@ -18,34 +18,68 @@ const userAge = num => {
 //call de function
 console.log(userAge(1989));
 
-// Create a function that accepts a text from user and check if the user has entered a month name, if so print out that month and in which season it is.
-const monthNames = [
-  "January",
-  "Feb",
-  "Mac",
-  "April",
-  "Mai",
-  "June",
-  "July",
-  "Aug",
-  "Sept",
-  "Okt",
-  "Nov",
-  "Dec"
-];
+/* Create a function that accepts a text from user and check if the user has entered a month name, 
+if so print out that month and in which season it is.
+*/
 
-function nameOfThatMonthEasyWay(num) {
-  let result = "";
+function isMonth(str) {
+  // Convert string to lowercase
+  str = str.toLowerCase().split(" ");
+  console.log(str);
 
-  let newNum = num - 1;
-  if (num >= 1 && num <= 12) {
-    result = monthNames[newNum];
-  } else {
-    result = "Sorry is not a a month";
+  // Initialize array of months
+  const months = [
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "august",
+    "september",
+    "october",
+    "november",
+    "december"
+  ];
+
+  function season(value) {
+    switch (value) {
+      case "december":
+      case "january":
+      case "february":
+        return "winter";
+
+      case "march":
+      case "april":
+      case "may":
+        return "spring";
+
+      case "june":
+      case "july":
+      case "august":
+        return "summer";
+
+      case "september":
+      case "october":
+      case "november":
+        return "fall";
+    }
   }
-  return result;
+
+  for (let i = 0; i < str.length; i++) {
+    for (let j = 0; j < months.length; j++) {
+      if (str[i].includes(months[j])) {
+        let composestring = `The month of ${str[i]} is in the ${season(
+          str[i]
+        )}!`;
+        return composestring;
+      }
+    }
+  }
 }
-console.log(nameOfThatMonthEasyWay(10)); // Okt
+
+console.log(isMonth("the best march the best"));
 
 // Create a function that takes a string and a word, and then returns true or false depending on whether the word starts with the initial string.
 // dictionary("bu", "button") ➞ true
@@ -63,10 +97,14 @@ function dictionary(str, word) {
 dictionary("tri", "triplet");
 
 // Complete the function below so that it returns "Two for me and one for you" when no arguments are passed
-const twofer = who =>
-  typeof who === "undefined"
-    ? `Two for me and one for you`
-    : `Two for me and one for ${who}`;
+// const twofer = who =>
+//   typeof who === "undefined"
+//     ? `Two for me and one for you`
+//     : `Two for me and one for ${who}`;
+
+const twofer = (who = "you") => {
+  return `Two for me and one for ${who}`;
+};
 
 // call de functions
 console.log(twofer("Ali")); // -> "Two for me and one for Ali"
@@ -74,10 +112,19 @@ console.log(twofer()); // -> "Two for me and one for you"
 
 // Complete the function below so that it still calculates the power of a number even if the `exp` argument is not passed to it. The default `exp` should be set to 2.
 // Example: Calling the function with 2 and 4 will return 8 (2 to the power of 4), If you call it with just 2, it should return 4 (2 to the power of 2).
-const exponent = (num, exp) => {
-  let result = 1;
+// const exponent = (num, exp) => {
+//   let result = 1;
 
-  typeof exp === "undefined" ? (exp = 2) : exp;
+//   typeof exp === "undefined" ? (exp = 2) : exp;
+
+//   for (let i = 0; i < exp; i++) {
+//     result *= num;
+//   }
+
+//   return result;
+// };
+const exponent = (num, exp = 2) => {
+  let result = 1;
 
   for (let i = 0; i < exp; i++) {
     result *= num;
@@ -142,7 +189,7 @@ function printUser(arg) {
     activities += "and you are cool";
   }
 
-  let composeMsg = `Hello ${arg.name}! You have ${arg.age} and live at ${arg.adresse} and you like your favorites activities are: ${activities}`;
+  let composeMsg = `Hello ${arg.name}! You have ${arg.age} years and live at ${arg.adresse} and your favorites activities are: ${activities}`;
   return composeMsg;
 }
 
