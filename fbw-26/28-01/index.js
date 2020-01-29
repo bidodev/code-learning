@@ -8,7 +8,6 @@ const hasString = str => {
 hasString("This is my JavaScript string");
 
 // Create a function that calculates the user age e.g. 2000 -> 20.
-
 const userAge = num => {
   let d = new Date();
   let currentYear = d.getFullYear();
@@ -84,6 +83,7 @@ console.log(isMonth("the best march the best"));
 // Create a function that takes a string and a word, and then returns true or false depending on whether the word starts with the initial string.
 // dictionary("bu", "button") ➞ true
 // dictionary("tri", "triplet") ➞ true
+// dictionary ("fira", "firas") - true
 
 function dictionary(str, word) {
   let sliceWord = word.substr(0, str.length);
@@ -94,7 +94,7 @@ function dictionary(str, word) {
     console.log("False");
   }
 }
-dictionary("tri", "triplet");
+dictionary("trih", "triplet");
 
 // Complete the function below so that it returns "Two for me and one for you" when no arguments are passed
 // const twofer = who =>
@@ -176,7 +176,7 @@ let user = {
   name: "Juca",
   age: 30,
   adresse: "Landgrafen 10787 Berlin",
-  activities: ["Gym", "Dance"]
+  activities: ["Gym", "Sleeping"]
 };
 
 function printUser(arg) {

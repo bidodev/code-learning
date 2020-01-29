@@ -59,4 +59,4 @@ function isMonth(str) {
   }
 }
 
-console.log(isMonth("mauricio hates june because its hot.."));
+console.log(isMonth("I'm born in june and I'm a summer girl.."));

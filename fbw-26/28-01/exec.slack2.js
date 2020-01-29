@@ -66,15 +66,3 @@ console.log(checkXo("ooxXm"));
 // e.g. “john@example.com” is valid while “@example.com” is invalid.
 // The “.” and the “@” must be in the appropriate places.
 // e.g. “john.smith@com” is invalid while “john.smith@email.com” is valid.
-
-function validateEmail(email) {
-  let re = /\S+@\S+\.\S+/;
-
-  if (re.test(email) === true) {
-    return `${email} is valid`;
-  } else {
-    return `${email} is not valid`;
-  }
-}
-
-console.log(validateEmail("john.smith@com"));
