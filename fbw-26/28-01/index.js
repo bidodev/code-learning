@@ -144,7 +144,7 @@ console.log(exponent(2)); // -> 9
 // Over than 85 and less than 90 (A)
 // And over 90 print (A+)
 
-let notes = [60, 80, 80, 90, 50, 50];
+let notes = [85, 85, 85, 85, 85, 85];
 
 //using .map
 const average = array => {
