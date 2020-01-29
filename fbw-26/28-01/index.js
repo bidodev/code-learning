@@ -63,6 +63,9 @@ function isMonth(str) {
       case "october":
       case "november":
         return "fall";
+
+      default:
+        return "Something went wrong";
     }
   }
 

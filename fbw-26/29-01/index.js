@@ -1,9 +1,7 @@
 // Create a function will calculate how many times empty space occurred in a given string by the user and print out only the characters number
 
 let givenString = "This is my";
-
 const emptySpace = str => str.length - (str.split(" ").length - 1);
-
 console.log(emptySpace(givenString));
 
 // Create a function that will receive a (user name , salary and kid’s names)
@@ -65,30 +63,41 @@ function isNumber(str) {
 }
 console.log(isNumber("Once upon 0175822346 0305822346"));
 
-// Write a function that checks whether the user has entered a valid German bank account.
-// Note: German bank accounts should starts with DE and has 20 number.
-// DExxxxxxxxxxxxxxxxxxxx
+/**
+ *Write a function that checks whether the user has entered a valid German bank account.
+ *Note: German bank accounts should starts with DE and has 20 number.
+ *DExxxxxxxxxxxxxxxxxxxx
+ */
 
-function isAccount(str) {
-  //console.log(str.length);
-  if (str.length > 21) {
-    return "You IBAN can't have more than 22 characters.";
-  } else {
-    // Convert string to lowercase
-    str = str.toLowerCase();
+const isAccount = str => {
+  // Convert string to lowercase
+  const strLwcase = str.toLowerCase();
 
-    const prefix = ["de"];
-    let restAccount = str.slice(3, 21);
+  //check the prefix of the IBAN
+  const prefix = ["de"];
 
-    if (
-      str.slice(0, 2) == prefix &&
-      restAccount.length == 18 &&
-      !isNaN(restAccount)
-    ) {
-      return `Your IBAN is ${prefix.join("").toUpperCase() + restAccount}`;
-    } else {
-      return "Please check your IBAN";
+  //get the rest of the string
+  const restAccount = strLwcase.slice(2);
+
+  //We have to slice the first two characters of the passed string
+  const slicedPrefix = strLwcase.slice(0, 2);
+
+  //we have to check if isNAN (if it's we gonna get false)
+  const isNotNumber = isNaN(restAccount);
+
+  try {
+    if (slicedPrefix != prefix || restAccount.length !== 20 || isNotNumber) {
+      throw Error("Logs: Technical Error");
     }
+    return `Your IBAN is ${prefix.join("").toUpperCase() + restAccount}`;
+  } catch (e) {
+    return `Please check your IBAN`;
   }
-}
-console.log(isAccount("dE0000000000000000100"));
+};
+
+console.log(isAccount("DE10000000001110111121"));
+console.log(isAccount("ae00000000000000001000"));
+console.log(isAccount("DExxxxxxxxxxxxxxxxxxxx"));
+console.log(isAccount("de000000012330000001000"));
+console.log(isAccount("DExxxxxxxx123xssxxxxx"));
+console.log(isAccount("aExxxxxxxx123xssxxxxx"));
