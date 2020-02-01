@@ -1,4 +1,7 @@
-// Create a function will calculate how many times empty space occurred in a given string by the user and print out only the characters number
+/**
+ * Create a function will calculate how many times empty space occurred in a
+ * given string by the user and print out only the characters number
+ */
 
 let givenString = "This is my";
 const emptySpace = str => str.length - (str.split(" ").length - 1);
@@ -83,21 +86,18 @@ const isAccount = str => {
   const slicedPrefix = strLwcase.slice(0, 2);
 
   //we have to check if isNAN (if it's we gonna get false)
-  const isNotNumber = isNaN(restAccount);
+  const isNumber = !isNaN(restAccount);
 
-  try {
-    if (slicedPrefix != prefix || restAccount.length !== 20 || isNotNumber) {
-      throw Error("Logs: Technical Error");
-    }
+  if (slicedPrefix == prefix && restAccount.length == 20 && isNumber) {
     return `Your IBAN is ${prefix.join("").toUpperCase() + restAccount}`;
-  } catch (e) {
+  } else {
     return `Please check your IBAN`;
   }
 };
 
-console.log(isAccount("DE10000000001110111121"));
-console.log(isAccount("ae00000000000000001000"));
+console.log(isAccount("DE11111111111111121111"));
+// console.log(isAccount("ae00000000000000001000"));
 console.log(isAccount("DExxxxxxxxxxxxxxxxxxxx"));
-console.log(isAccount("de000000012330000001000"));
-console.log(isAccount("DExxxxxxxx123xssxxxxx"));
-console.log(isAccount("aExxxxxxxx123xssxxxxx"));
+// console.log(isAccount("de000000012330000001000"));
+// console.log(isAccount("DExxxxxxxx123xssxxxxx"));
+// console.log(isAccount("aExxxxxxxx123xssxxxxx"));
