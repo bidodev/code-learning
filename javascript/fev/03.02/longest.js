@@ -5,19 +5,20 @@
 
 const words = [
   "leao",
-  "nenekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
+  "mwhahhaahahahahahhahaahah",
   "jose",
   "josue mauri",
-  "kkkkkkkkkkkkkkkkkkkkkkkkkk",
-  "mwhahhaahhhahahhahahahahhahahahahahahhahaahah"
+  "mwhahhaahahahahahhahaabah",
+  "hehhehe",
+  "hehhe"
 ];
 
 const longestStr = arg => {
   //create a new array to save array passed to the parameter.
-  let originalArr = arg;
+  const originalArr = arg;
 
   //other array to save the lenghts of the words from the originalArray.
-  let lenghtArr = [];
+  const lenghtArr = [];
 
   let indexBigger = 0;
   //console.log(originalArr);
@@ -27,10 +28,15 @@ const longestStr = arg => {
   }
   //console.log(lenghtArr);
 
-  indexBigger = lenghtArr.indexOf(Math.max(...lenghtArr)); //We check the new array for the bigger number and return the index of this number..
+  //return the bigger number inside the array.
+  let lengthBigger = Math.max(...lenghtArr);
+
+  indexBigger = lenghtArr.indexOf(Math.max(lengthBigger)); //We check the new array for the bigger number and return the index of this number..
   //console.log(indexBigger);
 
-  return originalArr[indexBigger]; //We return the word which has this index from the originalArray.
+  const composeMessage = `The bigger word is ${originalArr[indexBigger]} it has ${lengthBigger} letters and it's located in the index ${indexBigger}.`;
+
+  return composeMessage; //We return the word which has this index from the originalArray.
 };
 
 console.log(longestStr(words));
