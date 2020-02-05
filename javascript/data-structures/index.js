@@ -1,5 +1,3 @@
-let simpleArray = ["one", 2, "three", 5, false, undefined, null];
-
 // const map = simpleArray.map(value => {
 //
 //   if (typeof value === "number") {
@@ -10,43 +8,57 @@ let simpleArray = ["one", 2, "three", 5, false, undefined, null];
 
 // console.log(map);
 const numbersArray = [];
-const trashArray = [];
 
-const myNumbers = arr => {
-  for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] == "number") {
-      numbersArray.push(arr[i]);
-    } else {
-      trashArray.push(arr[i]);
-    }
-  }
-  return numbersArray;
-};
+//with for
 
-console.log(myNumbers(simpleArray));
+// const myNumbers = arr => {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] == "number") {
+//       numbersArray.push(arr[i]);
+//     }
+//   }
+//   return numbersArray;
+// };
+let arr = ["one", 2, "three", 5, false, undefined, null];
 
-//complex Array
-let complexArray = [
-  [
-    {
-      one: 1,
-      two: 2
-    },
-    {
-      three: 3,
-      four: 4
-    }
-  ],
-  [
-    {
-      a: "a",
-      b: "b"
-    },
-    {
-      c: "c",
-      d: "d"
-    }
-  ]
-];
+// with .map
+const myNumbers = arr.map(value => {
+  return typeof value === "number" ? value * 2 : value;
+});
 
-console.log(complexArray[0]);
+console.log(myNumbers);
+
+// const myFunc = arg => {
+
+//   arg.map(value => {
+//     return typeof value === "number" ? value * 2 : value;
+//   });
+// };
+
+// console.log(myFunc(simpleArr));
+
+// //complex Array
+// let complexArray = [
+//   [
+//     {
+//       one: 1,
+//       two: 2
+//     },
+//     {
+//       three: 3,
+//       four: 4
+//     }
+//   ],
+//   [
+//     {
+//       a: "a",
+//       b: "b"
+//     },
+//     {
+//       c: "c",
+//       d: "d"
+//     }
+//   ]
+// ];
+
+// console.log(complexArray[0]);
