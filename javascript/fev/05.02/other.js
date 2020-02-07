@@ -1,19 +1,31 @@
-let mySigns = {
-  12: { name: "capricornio", month: "December", startData: 20 },
-  01: { name: "aries", month: "March", startData: 21 }
+/**
+ * name: our sign name
+ * month:
+ * lastDay: our last day of the sign.
+ */
+
+const signs = {
+  0: { sign: "Capricorn", lastDay: 19 },
+  1: { sign: "Aquarius", lastDay: 18 },
+  2: { sign: "Pisces", lastDay: 20 },
+  3: { sign: "Aries", lastDay: 20 },
+  4: { sign: "Taurus", lastDay: 21 },
+  5: { sign: "Gemini", lastDay: 21 },
+  6: { sign: "Cancer", lastDay: 22 },
+  7: { sign: "Leo", lastDay: 22 },
+  8: { sign: "Virgo", lastDay: 21 },
+  9: { sign: "Libra", lastDay: 22 },
+  10: { sign: "Scorpio", lastDay: 21 },
+  11: { sign: "Sagittarius", lastDay: 20 },
+  12: { sign: "Capricorn", lastDay: 19 }
 };
 
-/**
- * Aries dates: March 21 – April 19
-Taurus dates: April 20 – May 20
-Gemini dates: May 21 – June 20
-Cancer dates: June 21 – July 22
-Leo dates: July 23 – August 22
-Virgo dates: August 23 – September 22
-Libra dates: September 23 – October 22
-Scorpio dates: October 23 – November 21
-Sagittarius dates: November 22 – December 21
-Capricorn dates: December 22 – January 19
-Aquarius dates: January 20 – February 18
-Pisces dates:February 19 – March 20
- */
+const mySign = (birthDay, month) => {
+  if (birthDay > signs[month].lastDay) {
+    return signs[month].sign;
+  } else {
+    return signs[month - 1].sign;
+  }
+};
+
+console.log(mySign(18, 01));

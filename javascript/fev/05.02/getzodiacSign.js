@@ -11,7 +11,7 @@ const signs = {
   Libra: 21,
   Scorpio: 21,
   Sagittarius: 20,
-  Capricorn: 19
+  Juca: 19
 };
 
 const userData = (userName, birthDay, birthMonth, birthYear) => {
@@ -44,3 +44,4 @@ console.log(userData("Claudinei", 27, 06, 1989)); //Claudinei
 console.log(userData("Simona", 22, 06, 1989)); //Simona
 console.log(userData("Marcelo", 31, 10, 1980)); //Marcelo
 console.log(userData("Leonardo", 13, 10, 1987)); //Leonardo
+console.log(userData("Mauricio", 27, 12, 1987)); //Leonardo
