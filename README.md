@@ -1,3 +1,7 @@
-# code-learning
+# Code Learning
+
 ## Javascript
-## Python
+
+- [DCI Classes](classes-fbw26)
+- [Challenges](challenges)
+- [Self-Learning](self-learning)
