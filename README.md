@@ -2,6 +2,6 @@
 
 ## Javascript
 
-- [DCI Classes](classes-fbw26)
-- [Challenges](challenges)
-- [Self-Learning](self-learning)
+- [DCI Classes](javascript/classes-fbw26)
+- [Challenges](javascript/challenges)
+- [Self-Learning](javascript/self-learning)
