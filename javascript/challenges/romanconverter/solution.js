@@ -1,46 +1,89 @@
-// /**
-//  * JavaScript Algorithms and Data Structures Projects: Roman Numeral Converter
-//  * Convert the given number into a roman numeral.
-//  *
-//  * All roman numerals answers should be provided in upper-case.
-//  */
+// // /**
+// //  * JavaScript Algorithms and Data Structures Projects: Roman Numeral Converter
+// //  * Convert the given number into a roman numeral.
+// //  *
+// //  * All roman numerals answers should be provided in upper-case.
+// //  */
 
-// const ROMAN_DECIMAL_VALUES = [
-//   { d: 1, r: "I" },
-//   { d: 4, r: "IV" },
-//   { d: 5, r: "V" },
-//   { d: 9, r: "IX" },
-//   { d: 10, r: "X" },
-//   { d: 40, r: "XL" },
-//   { d: 50, r: "L" },
-//   { d: 90, r: "XC" },
-//   { d: 100, r: "C" },
-//   { d: 400, r: "CD" },
-//   { d: 500, r: "D" },
-//   { d: 900, r: "CM" },
-//   { d: 1000, r: "M" }
-// ];
-
-// const convertToRoman = num => {
+// const convertToRoman = (num) => {
 //   let saveString = num.split("");
-//   console.log("DEBUG: saveString", saveString);
+//   let otherArray = [];
+//   //   console.log("DEBUG: saveString", saveString);
 
-//   //   for (let i = 1; i < saveString.length; i++) {
-//   //     // restNumber += "0";
+//   //   for (let i = 0; i < ROMAN_DECIMAL_VALUES.length; i++) {
+//   //     if (ROMAN_DECIMAL_VALUES[i].d === 1000) {
+//   //       console.log(ROMAN_DECIMAL_VALUES[i].r);
+//   //     }
 //   //   }
-//   //   number = saveString.shift() + restNumber;
-//   //   console.log(number);
+//   // };
+//   for (let i = saveString.length - 1; i >= 0; i--) {
+//     otherArray.push(saveString[i]);
+//   }
+//   console.log(otherArray);
+//   console.log(otherArray[0]);
+//   console.log(otherArray[1]);
+//   console.log(otherArray[2]);
+//   console.log(otherArray[3]);
+
+//   // console.log(otherArray.slice)
+//   /**
+//    *[90]
+//    * 1984
+//    * 1000
+//    * 900
+//    * 80
+//    * 4
+//    */
 // };
+// // convertToRoman("1984"); //M CM LXXX IV
+// // convertToRoman("3999"); //MMM CM XC IX
+/**
+ *  { },
+  {  },
+  { },
+  { },
+  {  },
+  {  },
+  {  },
+  {  },
+  { d:  },
+  { d: 900, r: "CM" },
+  { d: 1000, r: "M" }
+ */
 
-// convertToRoman("84");
+const ROMAN_DECIMAL_VALUES = {
+  0: "",
+  1: "I",
+  4: "IV",
+  5: "V",
+  9: "IX",
+  10: "X",
+  40: "XL",
+  50: "L",
+  90: "XC",
+  100: "C",
+  400: "CD",
+  500: "D",
+  900: "CM",
+  1000: "M"
+};
 
-// //Under development
+function zero(arg) {
+  let shit = [1, 10, 100, 1000];
+  let num = arg.split("").reverse();
+  // console.log(num);
 
-// /**
-//  *
-//  */
-
-function reverseString(text) {
-  return [...text].reduce((acc, char) => char + acc, "");
+  let str = [];
+  for (let i = 0; i < num.length; i++) {
+    str.push(num[i] * shit[i]);
+  }
+  return str;
 }
-console.log(reverseString("Uga"));
+continues = zero("1500");
+console.log(continues);
+
+let resultRoman = "";
+for (let i = continues.length - 1; i >= 0; i--) {
+  resultRoman += ROMAN_DECIMAL_VALUES[continues[i]];
+}
+console.log(resultRoman);
