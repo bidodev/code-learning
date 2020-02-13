@@ -70,27 +70,30 @@
 
 /**
  * // **5. Missing Number.**
-// Create a function that takes an array of all integers between 1 and 10 (excluding one) and returns the missing integer.
+// Create a function that takes an array of all integers between 1 and 15 (excluding one) and returns the missing integer.
 // Examples:
-// * missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10]) ➞ 5
+// * missingNums([1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 25145]) ➞ 5
 // * missingNums([7, 2, 3, 6, 5, 9, 1, 4, 8]) ➞ 10
 // * missingNums([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7
  */
 
-// let original = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// let numbers = [10, 5, 1, 2, 4, 6, 8, 3, 9];
+let numbers = [10, 5, 1, 2, 4, 6, 8, 3, 13, 12, 15];
 
-// for (let i = 1; i <= 10; i++) {
-//   if (numbers.indexOf(i) == -1) {
-//     console.log(i);
-//   }
-// }
+let maxNumber = Math.max(...numbers);
+// console.log(maxNumber);
 
-// for (let i = 1; i <= 10; i++) {
-//   if (!numbers.includes(i)) {
-//     console.log(i);
-//   }
-// }
+for (let i = 1; i < maxNumber; i++) {
+  if (!numbers.includes(i)) {
+    console.log(i);
+  }
+}
+
+let numbers = [10, 5, 1, 2, 4, 6, 8, 3, 9];
+for (let i = 1; i <= 10; i++) {
+  if (numbers.indexOf(i) == -1) {
+    console.log(i);
+  }
+}
 
 /**
  * This Triangular Number Sequence is generated from a pattern of dots that form a triangle.
@@ -104,7 +107,7 @@
   triangle(215) ➞ 23220
  */
 
-const triangle = (num) => {
-  console.log(num);
-};
-triangle(1);
+// const triangle = (num) => {
+//   console.log(num);
+// };
+// triangle(1);
