@@ -20,7 +20,35 @@ Now, number = 9
 Divide 9/9. Quotient = 1, Remainder = 0. The corresponding symbol IX will be repeated once.
 Step 5
  */
-console.log(3549 % 1000);
-console.log(549 % 100);
-console.log(49 % 10);
-console.log(9 % 1);
+
+function toRoman(num) {
+  const romanArr = [
+    [1000, "M"],
+    [900, "CM"],
+    [500, "D"],
+    [400, "CD"],
+    [100, "C"],
+    [90, "XC"],
+    [50, "L"],
+    [40, "XL"],
+    [10, "X"],
+    [9, "IX"],
+    [5, "V"],
+    [4, "IV"],
+    [1, "I"]
+  ];
+  let roman = [];
+  for (let i = 0; i < romanArr.length; i++) {
+    while (num >= romanArr[i][0]) {
+      console.log("TCL: toRoman -> romanArr", romanArr);
+
+      roman += romanArr[i][1];
+      console.log("TCL: toRoman -> roman", roman);
+
+      num -= romanArr[i][0];
+      console.log("TCL: toRoman -> num", num);
+    }
+  }
+  return roman;
+}
+console.log(toRoman(1330));
