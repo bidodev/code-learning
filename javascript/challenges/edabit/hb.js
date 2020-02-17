@@ -14,22 +14,28 @@
  * findBrokenKeys("beethoven", "affthoif5") ➞ ["b", "e", "v", "n"]
  */
 
-const findBrokenKeys = (supposedText, typedText) => {
-  let brokenKeys = [];
+// const findBrokenKeys = (supposedText, typedText) => {
+//   let brokenKeys = [];
 
-  const supposedTextLowerCase = supposedText.toLowerCase();
-  const typedTextLowerCase = typedText.toLowerCase();
+//   const supposedTextLowerCase = supposedText.toLowerCase();
+//   const typedTextLowerCase = typedText.toLowerCase();
 
-  for (let i = 0; i < supposedTextLowerCase.length; i++) {
-    if (supposedTextLowerCase[i] !== typedTextLowerCase[i]) {
-      if (!brokenKeys.includes(supposedTextLowerCase[i])) {
-        brokenKeys.push(supposedTextLowerCase[i]);
-      }
-    }
-  }
+//   for (let i = 0; i < supposedTextLowerCase.length; i++) {
+//     if (supposedTextLowerCase[i] !== typedTextLowerCase[i]) {
+//       if (!brokenKeys.includes(supposedTextLowerCase[i])) {
+//         brokenKeys.push(supposedTextLowerCase[i]);
+//       }
+//     }
+//   }
 
-  return brokenKeys;
-};
-console.log(findBrokenKeys("happy birthday", "hawwy birthday")); //["p"]
-console.log(findBrokenKeys("starry night", "starrq light")); //["y", "n"]
-console.log(findBrokenKeys("beethoven", "affthoif5")); //["b", "e", "v", "n"]
+//   return brokenKeys;
+// };
+// console.log(findBrokenKeys("happy birthday", "hawwy birthday")); //["p"]
+// console.log(findBrokenKeys("starry night", "starrq light")); //["y", "n"]
+// console.log(findBrokenKeys("beethoven", "affthoif5")); //["b", "e", "v", "n"]
+
+function findBrokenKeys(str1, str2) {
+  return [...new Set(str1.split("").filter((a, index) => a !== str2[index]))];
+}
+
+console.log(findBrokenKeys("happy birthday", "hawwy birthday"));
