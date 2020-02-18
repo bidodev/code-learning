@@ -141,6 +141,16 @@ console.log(capitalizeFirstLetter("hey there"));
   Look at the unit tests for validating a pin. Create a function named "_validPin_" that fulfills the requirements of the tests.
 */
 const validPin = (number) => {
+  //check if the pin has the allowed length
+  if (number.length !== 4) {
+    return false;
+  }
+
+  //check if the pin is even
+  if (number % 2 !== 0) {
+    return false;
+  }
+
   //split the original string of numbers into an array of string(numbers)
   let strNumbers = number.split("");
 
@@ -160,13 +170,7 @@ const validPin = (number) => {
       return acc + current;
     }) > 5;
 
-  //check if the pin is even
-  const isEven = number % 2 == 0;
-
-  //check if the pin has the allowed length
-  const allowedLength = number.length == 4;
-
-  return hasDiffer && isEven && allowedLength && addUp;
+  return hasDiffer && addUp;
 };
 
 console.log(validPin("1234")); //→ true
