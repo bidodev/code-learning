@@ -10,25 +10,24 @@ v = -8;
 
 */
 
-const firstArr = [5, 2, 10];
-const secondArr = [1, 5, 8];
+// const addTogether = (firstArr, secondArr, target) => {
+//   for (let i = 0; i < firstArr.length; i++) {
+//     const ELEMENT_IN_A = firstArr[i];
+//     for (let j = 0; j < secondArr.length; j++) {
+//       const ELEMENT_IN_B = secondArr[j];
+//       if (ELEMENT_IN_A + ELEMENT_IN_B === target) {
+//         return true;
+//       }
+//     }
+//   }
+//   return false;
+// };
 
-let target = 13;
+const firstArr = [0, -1, 32, 5, -5, 68];
+const secondArr = [-10, 40, -3, 8, 2546];
+let target = -8;
 
-const addTogether = (firstArr, secondArr, target) => {
-  for (let i = 0; i < firstArr.length; i++) {
-    const ELEMENT_IN_A = firstArr[i];
-    for (let j = 0; j < secondArr.length; j++) {
-      const ELEMENT_IN_B = secondArr[j];
-      if (ELEMENT_IN_A + ELEMENT_IN_B === target) {
-        return true;
-      }
-    }
-  }
-  return false;
-};
+const addTogether = (firstArr, secondArr, target) =>
+  firstArr.some((a) => secondArr.some((b) => a + b == target));
+
 console.log(addTogether(firstArr, secondArr, target));
-
-firstArr.some((element) => {
-  console.log(element);
-});
