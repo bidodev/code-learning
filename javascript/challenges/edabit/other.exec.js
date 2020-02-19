@@ -10,16 +10,21 @@ v = -8;
 
 */
 
-arrA = [2, 2, 10];
-arrB = [1, 20, 30];
-target = 3;
+const firstArr = [5, 2, 10];
+const secondArr = [1, 5, 8];
 
-for (let i = 0; i < arrA.length; i++) {
-  const ELEMENT_I = arrA[i];
-  for (let j = 0; j < arrB.length; j++) {
-    const ELEMENT_J = arrB[j];
-    if (ELEMENT_I + ELEMENT_J === target) {
-      console.log(true);
+let target = 13;
+
+const addTogether = (firstArr, secondArr, target) => {
+  for (let i = 0; i < firstArr.length; i++) {
+    const ELEMENT_IN_A = firstArr[i];
+    for (let j = 0; j < secondArr.length; j++) {
+      const ELEMENT_IN_B = secondArr[j];
+      if (ELEMENT_IN_A + ELEMENT_IN_B === target) {
+        return true;
+      }
     }
   }
-}
+  return false;
+};
+console.log(addTogether(firstArr, secondArr, target));
