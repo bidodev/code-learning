@@ -28,3 +28,7 @@ const addTogether = (firstArr, secondArr, target) => {
   return false;
 };
 console.log(addTogether(firstArr, secondArr, target));
+
+firstArr.some((element) => {
+  console.log(element);
+});
