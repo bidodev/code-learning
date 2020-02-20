@@ -2,10 +2,10 @@
 
 ## Javascript
 - **Self Learning**
-	-  [Basic](javascript/self-learning/basics)
+	-  [Basic](javascript/self-learning/ba)
 	-  [ES6](javascript/self-learning/es6)
-	-  [Regular Expressions](javascript/)
-	-  [Debugging](javascript/)
+	-  [Regular Expressions](javascript/self-learning/regex)
+	-  [Debugging](javascript/self-learning/debug)
 	-  [Basic Data Structures](javascript/)
 	-  [Basic Algorithm Scripting](javascript/)
 	-  [Object Oriented Programming](javascript/)
