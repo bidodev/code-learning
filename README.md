@@ -16,7 +16,7 @@
 
 - **Digital Career Institute**
 	- [Classes](javascript/classes-fbw26/classes)
-	- [Exercises](javascript/classes-fbw26/exec)
+	- [Exercises](javascript/classes-fbw26/exercises)
 	- [Tests](javascript/classes-fbw26/tests)
 
 
