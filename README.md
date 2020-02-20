@@ -2,7 +2,7 @@
 
 ## Javascript
 - **Self Learning**
-	-  [Basic](javascript/self-learning/basics)
+	-  [Basics](javascript/self-learning/basics)
 	-  [ES6](javascript/self-learning/es6)
 	-  [Regular Expressions](javascript/self-learning/regex)
 	-  [Debugging](javascript/self-learning/debug)
