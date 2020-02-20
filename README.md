@@ -15,7 +15,9 @@
 	-  [Challenges](javascript/challenges)
 
 - **Digital Career Institute**
-	- [Classes](javascript/classes-fbw26)
+	- [Classes](javascript/classes-fbw26/classes)
+	- [Exercises](javascript/classes-fbw26/exec)
+	- [Tests](javascript/classes-fbw26/tests)
 
 
 ## Frameworks
