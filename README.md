@@ -25,7 +25,8 @@
 	-  [Basics](javascript/self-learning/basics)
 
 ## Others
-- [Node.js](/nodejs)
+- **Node**
+	- [Node.js](nodejs/first-app/modules)
 
 ## HTML
 
