@@ -12,16 +12,17 @@
 	-  [Functional Programming](javascript/)
 	-  [Intermediate Algorithm Scripting](javascript/)
 	-  [JavaScript Algorithms and Data Structures Projects](javascript/)
+	-  [Challenges](javascript/challenges)
 
-- [DCI Classes](javascript/classes-fbw26)
-- [Challenges](javascript/challenges)
+- **Digital Career Institute**
+	- [Classes](javascript/classes-fbw26)
 
-	
+
+## Others
 - [Node.js](/nodejs)
 
+## HTML
 
-
+## CSS
 
 ## Python
-- [Challenges](python/challenges)
-- [Self-Learning](javascript/self-learning)
