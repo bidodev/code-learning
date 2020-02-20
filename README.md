@@ -1,6 +1,7 @@
 # Code Learning
 
 ## Javascript
+- [Self-Learning](javascript/self-learning)
 	-  [Basic](javascript/)
 	-  [ES6](javascript/)
 	-  [Regular Expressions](javascript/)
@@ -12,11 +13,12 @@
 	-  [Intermediate Algorithm Scripting](javascript/)
 	-  [JavaScript Algorithms and Data Structures Projects](javascript/)
 
+- [DCI Classes](javascript/classes-fbw26)
+- [Challenges](javascript/challenges)
 
 	
 - [Node.js](/nodejs)
-- [DCI Classes](javascript/classes-fbw26)
-- [Challenges](javascript/challenges)
+
 
 
 
