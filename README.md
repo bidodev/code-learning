@@ -6,7 +6,7 @@
 	-  [ES6](javascript/self-learning/es6)
 	-  [Regular Expressions](javascript/self-learning/regex)
 	-  [Debugging](javascript/self-learning/debug)
-	-  [Basic Data Structures](javascript/)
+	-  [Basic Data Structures](javascript/self-learning/data-structures)
 	-  [Basic Algorithm Scripting](javascript/)
 	-  [Object Oriented Programming](javascript/)
 	-  [Functional Programming](javascript/)
