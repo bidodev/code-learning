@@ -8,7 +8,7 @@
 	-  [Debugging](javascript/self-learning/debug)
 	-  [Basic Data Structures](javascript/self-learning/data-structures)
 	-  [Basic Algorithm Scripting](javascript/)
-	-  [Object Oriented Programming](javascript/)
+	-  [Object Oriented Programming](javascript/self-learning/complex-objects)
 	-  [Functional Programming](javascript/)
 	-  [Intermediate Algorithm Scripting](javascript/)
 	-  [JavaScript Algorithms and Data Structures Projects](javascript/)
