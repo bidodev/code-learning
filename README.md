@@ -2,9 +2,19 @@
 
 ## Javascript
 - [Self-Learning](javascript/self-learning)
-	-  [Basic Javascript](javascript/self-learning/)
-	-  [ES6](javascript/self-learning/)
-	-  [Arrays](javascript/self-learning/arrays)
+	-  [Basic](javascript/)
+	-  [ES6](javascript/)
+	-  [Regular Expressions](javascript/)
+	-  [Debugging](javascript/)
+	-  [Basic Data Structures](javascript/)
+	-  [Basic Algorithm Scripting](javascript/)
+	-  [Object Oriented Programming](javascript/)
+	-  [Functional Programming](javascript/)
+	-  [Intermediate Algorithm Scripting](javascript/)
+	-  [JavaScript Algorithms and Data Structures Projects](javascript/)
+
+
+	
 - [Node.js](/nodejs)
 - [DCI Classes](javascript/classes-fbw26)
 - [Challenges](javascript/challenges)
