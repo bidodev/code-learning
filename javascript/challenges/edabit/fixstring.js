@@ -8,15 +8,15 @@
  */
 
 const fixStart = (string) => {
-  const array = string.split("");
+  result = "";
+  letter = string[0];
 
-  for (let i = 1; i < array.length; i++) {
-    letter = array[0];
-    array[i] = array[i].replace(letter, "*");
+  for (let i = 1; i < string.length; i++) {
+    result += string[i].replace(letter, "*");
   }
-  return array.join("");
+  return letter + result;
 };
 
-console.log(fixStart("babble"));
+console.log(fixStart("babblb"));
 console.log(fixStart("people"));
 console.log(fixStart("nonsense"));
