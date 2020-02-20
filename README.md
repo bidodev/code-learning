@@ -1,7 +1,6 @@
 # Code Learning
 
 ## Javascript
-- [Self-Learning](javascript/self-learning)
 	-  [Basic](javascript/)
 	-  [ES6](javascript/)
 	-  [Regular Expressions](javascript/)
