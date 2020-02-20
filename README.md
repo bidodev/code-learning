@@ -26,7 +26,7 @@
 
 ## Others
 - **Node.js**
-	- [Modules](nodejs/first-app/)
+	- [Modules](nodejs/first-app/modules)
 
 ## HTML
 
