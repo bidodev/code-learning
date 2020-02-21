@@ -24,7 +24,8 @@ v = -8;
 // };
 
 const firstArr = [0, -1, 32, 5, -5, 68];
-const secondArr = [-10, 40, -3, 8, 2546];
+const secondArr = [-10, 40, -3, 8, 25, 46];
+
 let target = -8;
 
 const addTogether = (firstArr, secondArr, target) =>
