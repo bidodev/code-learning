@@ -4,42 +4,26 @@
 
 // Examples
 // cumulativeSum([1, 2, 3, 4]) ➞ [1, 3, 6, 10]
+const cumulativeSum = (arr) => {
+  const sum = (arr) => {
+    return arr.reduce((saver, current) => (saver += current));
+  };
 
-const sum = (arr) => {
-  result = 0;
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    result += element;
+  const originArr = arr;
+  const resultArr = [];
+
+  for (let i = 0; i < originArr.length; i++) {
+    if (resultArr.length == i) {
+      sliced = originArr.slice(0, resultArr.length + 1);
+      resultArr.push(sum(sliced));
+    }
   }
-  return result;
+
+  return resultArr;
 };
 
-original = [3, 3, -2, 408, 3, 3];
-finalArray = [];
+console.log(cumulativeSum([1, 2, 3, 4])); //[1, 3, 6, 10]
+console.log(cumulativeSum([3, 3, -2, 408, 3, 3])); // [3, 6, 4, 412, 415, 418]
 
-for (let i = 0; i < original.length; i++) {
-  if (finalArray.length == i) {
-    sliced = original.slice(0, finalArray.length + 1);
-    finalArray.push(sum(sliced));
-  }
-}
-console.log(finalArray);
-
-//console.log(sum([2, 3]));
-
-// let length = result.length;
-// //console.log(length);
-
-// if (length == 0) {
-//   result.push(original[length]);
-// }
-// if (length == 1) {
-//   result += original[length];
-// }
-
-// // console.log(result);
-// cumulativeSum([1, -2, 3]) ➞ [1, -1, 2]
-
-// cumulativeSum([3, 3, -2, 408, 3, 3]) ➞ [3, 6, 4, 412, 415, 418]
 // Notes
 // Return an empty array if the input is an empty array.
