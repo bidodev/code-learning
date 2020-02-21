@@ -5,6 +5,7 @@
 // Examples
 // cumulativeSum([1, 2, 3, 4]) ➞ [1, 3, 6, 10]
 const cumulativeSum = (arr) => {
+  //simple functions to addup the values of the array
   const sum = (arr) => {
     return arr.reduce((saver, current) => (saver += current));
   };
