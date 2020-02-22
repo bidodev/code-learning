@@ -1,12 +1,14 @@
 // Example
-var ourArray = [];
+//Print numbers from 0 - 4
+const ourArray = [];
 
-for (var i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   ourArray.push(i);
 }
 
+//Print numbers from 1 - 5
 // Setup
-var myArray = [];
+const myArray = [];
 
 for (let i = 1; i <= 5; i++) {
   myArray.push(i);
