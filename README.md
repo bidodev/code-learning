@@ -29,6 +29,9 @@
 	- [Modules](nodejs/first-app/modules)
 
 ## HTML
+- **Self Learning**
+	- [Basics](html/basics)
+	- [Projects](html/projects)
 
 ## CSS
 - **Sass**
