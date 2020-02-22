@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML5 Ironhack Breakfast Site</title>
+    <meta charset="UTF-8" />
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header nav {
+        display: inline;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #ih-logo {
+        width: 100px;
+        height: 100px;
+      }
+      .navbar a {
+        text-decoration: none;
+      }
+      .content h1 {
+        text-align: center;
+      }
+      #intro img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .wrapper {
+        width: 800px;
+        margin-left: 10%;
+      }
+      #intro p {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      footer p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <img
+            id="ih-logo"
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/uploa
+d_c7e7bc08a029a29b8ed5e1d816c9f268.png"
+            alt="ironhack logo"
+          />
+          <a href="index.html">HOME</a><a href="about.html">ABOUT US</a>
+          <a href="menu.html">MENU</a>
+          <a href="contact.html">CONTACT US</a>
+        </nav>
+      </header>
+      <div class="content">
+        <h1>Ironhack Breakfast Place</h1>
+        <section id="intro">
+          <p>
+            Here you will find all sorts of delicious treats
+          </p>
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/uploa
+d_880c92416efc4229c0d36a50f04acd43.jpg"
+            width="400"
+            alt="healthy
+breakfast"
+          />
+          <br />
+        </section>
+
+        <section id="mission">
+          <h2>Our mission</h2>
+          <p>
+            Our commitment is to use impeccable sourcing and quality ingredients
+            to help you code. An ongoing collaboration between the classroom
+            staff and the development team allows us to iterate our content and
+            give our students the coding "fruits and vegetables." - mainly made
+            of HTML and CSS - which they need to grow as healthy developers.
+          </p>
+        </section>
+        <h2>Our beverage</h2>
+        <ul>
+          <li>
+            Coffee
+            <ol>
+              <li>Espresso</li>
+              <li>Americano</li>
+              <li>Cappuccino</li>
+            </ol>
+          </li>
+          <li>
+            Tea
+            <ol>
+              <li>Earl Grey</li>
+              <li>English Breakfast</li>
+              <li>Mint Tea</li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+      <!-- closing div with class = "content" -->
+      <footer>
+        <p>Made with love in <strong>Ironhack</strong> ❤</p>
+      </footer>
+    </div>
+    <!-- closing div with class = "wrapper" -->
+  </body>
+</html>
