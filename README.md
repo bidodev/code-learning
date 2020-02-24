@@ -33,11 +33,11 @@
 
 ## HTML and CSS
 - **Self Learning**
-	- [Basics](html/basics)
-	- [Projects](html/projects)
+	- [Basics](html-css/basics)
+	- [Projects](html-css/projects)
 
 - **Digital Career Institute**
-	- [Classes](html/classes-fbw26/)
+	- [Classes](html-css/classes-fbw26/)
 - **Sass**
 
 
