@@ -25,7 +25,7 @@
 
 ## Frameworks
 - **React**
-	-  [Basics](javascript/self-learning/basics)
+	-  [Basics](react/)
 
 ## Others
 - **Node.js**
