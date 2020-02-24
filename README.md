@@ -37,7 +37,7 @@
 	- [Projects](html/projects)
 
 - **Digital Career Institute**
-	- [Classes](html/basics)
+	- [Classes](html/classes-fbw26/)
 - **Sass**
 
 
