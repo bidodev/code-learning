@@ -25,19 +25,21 @@
 
 ## Libraries / Frameworks
 - **React**
-	-  [Basics](react/)
+	-  [Basics](react/s)
 
 ## Others
 - **Node.js**
 	- [Modules](nodejs/first-app/modules)
 
 ## HTML and CSS
+> Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, nam.
+
 - **Self Learning / Digital Career Institute**
-	- [Basics](html-css/basics)
+	- [Daily Classes / Exercises](html-css/basics)
 	- [Projects](html-css/projects)
 
-- **Sass**
-	- [Projects](html-css/sass/projects)
 
 
 ## Python
