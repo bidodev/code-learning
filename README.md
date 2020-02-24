@@ -31,13 +31,15 @@
 - **Node.js**
 	- [Modules](nodejs/first-app/modules)
 
-## HTML
+## HTML and CSS
 - **Self Learning**
 	- [Basics](html/basics)
 	- [Projects](html/projects)
 
-## CSS
+- **Digital Career Institute**
+	- [Classes](html/basics)
 - **Sass**
+
 
 ## Python
 
