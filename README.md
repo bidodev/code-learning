@@ -23,7 +23,7 @@
 	- [Tests](javascript/classes-fbw26/tests)
 
 
-## Frameworks
+## Libraries / Frameworks
 - **React**
 	-  [Basics](react/)
 
