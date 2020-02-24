@@ -32,12 +32,10 @@
 	- [Modules](nodejs/first-app/modules)
 
 ## HTML and CSS
-- **Self Learning**
+- **Self Learning / Digital Career Institute**
 	- [Basics](html-css/basics)
 	- [Projects](html-css/projects)
 
-- **Digital Career Institute**
-	- [Classes](html-css/classes-fbw26/)
 - **Sass**
 
 
