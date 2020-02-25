@@ -3,25 +3,22 @@
 
 # Coding is ![Larning](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
 
-## Javascript
-- **Self Learning**
-	-  [Basics](javascript/self-learning/basics)
-	-  [ES6](javascript/self-learning/es6)
-	-  [Regular Expressions](javascript/self-learning/regex)
-	-  [Debugging](javascript/self-learning/debug)
-	-  [Basic Data Structures](javascript/self-learning/data-structures)
-	-  [Basic Algorithm Scripting](javascript/)
-	-  [Object Oriented Programming](javascript/self-learning/complex-objects)
-	-  [Functional Programming](javascript/)
-	-  [Intermediate Algorithm Scripting](javascript/)
-	-  [JavaScript Algorithms and Data Structures Projects](javascript/)
-	-  [Challenges](javascript/challenges)
+##Self Learning / Digital Career Institute
 
-- **Digital Career Institute**
-	- [Classes](javascript/classes-fbw26/classes)
-	- [Exercises](javascript/classes-fbw26/exercises)
-	- [Tests](javascript/classes-fbw26/tests)
-
+### Javascript
+-  [Basics](javascript/self-learning/basics)
+-  [ES6](javascript/self-learning/es6)
+-  [Regular Expressions](javascript/self-learning/regex)
+-  [Debugging](javascript/self-learning/debug)
+-  [Basic Data Structures](javascript/self-learning/data-structures)
+-  [Basic Algorithm Scripting](javascript/)
+-  [Object Oriented Programming](javascript/self-learning/complex-objects)
+-  [Functional Programming](javascript/)
+-  [Intermediate Algorithm Scripting](javascript/)
+-  [JavaScript Algorithms and Data Structures Projects](javascript/)
+-  [Daily Classes and Exercises](javascript/classes-fbw26/classes)
+-  [Tests](javascript/classes-fbw26/tests)
+- ** [Challenges](javascript/challenges) **
 
 ## Libraries / Frameworks
 - **React**
@@ -36,9 +33,8 @@
 
 Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, nam.
 
-- **Self Learning / Digital Career Institute**
-	- [Daily Classes / Exercises](html-css/basics)
-	- [Projects](html-css/projects)
+- [Daily Classes / Exercises](html-css/basics)
+- [Projects](html-css/projects)
 
 
 
