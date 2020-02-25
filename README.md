@@ -22,7 +22,7 @@
 
 ## Libraries / Frameworks
 - **React**
-	-  [Basics](react/s)
+	-  [Basics](react/)
 
 ## Others
 - **Node.js**
@@ -35,7 +35,6 @@ Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing e
 
 - [Daily Classes / Exercises](html-css/basics)
 - [Projects](html-css/projects)
-
 
 
 ## Python
