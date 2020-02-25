@@ -3,7 +3,7 @@
 
 # Coding is ![Larning](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
 
-##Self Learning / Digital Career Institute
+## Self Learning / Digital Career Institute
 
 ### Javascript
 -  [Basics](javascript/self-learning/basics)
@@ -18,7 +18,7 @@
 -  [JavaScript Algorithms and Data Structures Projects](javascript/)
 -  [Daily Classes and Exercises](javascript/classes-fbw26/classes)
 -  [Tests](javascript/classes-fbw26/tests)
-- ** [Challenges](javascript/challenges) **
+-  [Challenges](javascript/challenges)
 
 ## Libraries / Frameworks
 - **React**
