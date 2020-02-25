@@ -1,59 +1,36 @@
 $font-stack: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-$primary-color: rgb(63, 62, 62);
-$text-color: white;
+$body-color: #70564d;
+$footer-color: #201815;
+$header-color: #7c2b0d;
 
 body {
   font: 100% $font-stack;
-  background-color: $primary-color;
-  p {
-    color: white;
-    text-align: center;
-    margin: 50px;
-  }
-}
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  /*background-color: red;*/
-  ul {
-    /*background-color: blue;*/
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
-  li {
-    /*background-color: black;*/
-    padding: 0.5em;
-    display: inline;
-  }
-  a {
-    text-decoration: none;
-    color: #ebcfb2;
-    text-align: center;
-  }
-  a:hover {
-    padding: 5px;
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    box-shadow: inset 0 0 0 1px #e7ebec;
-  }
 }
 
-.another {
-  margin: 0.5em;
-  padding: 0.5em;
-  background-color: blanchedalmond;
+.main {
+  background-color: $body-color;
 }
 
-.form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+footer {
+  background-color: $footer-color;
+}
+header {
+  background-color: $header-color;
 }
 
-#required {
-  padding: 0.2em;
-  color: red;
+.sidenav {
+  width: 20%;
+  height: 60%;
+  position: fixed;
+  z-index: 1;
+  top: 2px;
+  background: #eee;
+  overflow-x: hidden;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
 }
