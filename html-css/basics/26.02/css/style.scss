@@ -1,4 +1,5 @@
 $primary-color: #292a2b;
+$primary-font: "Barlow Condensed", sans-serif;
 
 body {
   background-color: $primary-color;
@@ -19,7 +20,7 @@ body {
 /* Blockquote main style */
 .blockquote {
   position: relative;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: $primary-font;
   max-width: 50%;
   margin: 40px auto;
   align-self: center;
@@ -123,6 +124,30 @@ body {
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-bottom: 80px solid blue;
+}
+.draw {
+  width: 50%;
+  height: 20%;
+  margin: auto;
+  background-color: rgba(150, 135, 135, 0.3);
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 1em;
+  p {
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 0.01rem;
+    font-family: $primary-font;
+    line-height: 1.3;
+    text-decoration: underline;
+  }
+}
+
+p:last-child {
+  color: blue;
+}
+p:only-child {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
