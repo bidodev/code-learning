@@ -1,12 +1,13 @@
+$primary-color: #292a2b;
+
 body {
-  background-color: #292a2b;
+  background-color: $primary-color;
+  margin: 0 auto;
 }
 
 #fck-love {
-  margin-top: 50px;
   display: block;
-  margin-left: 24%;
-  margin-right: auto;
+  margin: 50px auto 0px 23%;
   width: 40%;
 }
 
@@ -19,7 +20,7 @@ body {
 .blockquote {
   position: relative;
   font-family: "Barlow Condensed", sans-serif;
-  max-width: 620px;
+  max-width: 50%;
   margin: 40px auto;
   align-self: center;
 }
@@ -81,4 +82,47 @@ body {
 .blockquote h4:first-letter {
   margin-left: -12px;
 }
+
+.square {
+  display: block;
+  margin: auto;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.circle {
+  display: block;
+  margin: auto;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.qd-circle {
+  display: block;
+  margin: auto;
+  padding: 25px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+
+  .qd-circle-int {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}
+
+.qd-triangle-int {
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid blue;
+}
+
 /*# sourceMappingURL=style.css.map */
