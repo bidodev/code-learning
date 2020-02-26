@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Trade Winds";
+  src: url("./Trade_Winds/TradeWinds-Regular.ttf") format("truetype");
+}
+
 $primary-color: #292a2b;
-$primary-font: "Barlow Condensed", sans-serif;
+$primary-font: "Trade Winds", Arial, Tahoma;
 
 body {
   background-color: $primary-color;
@@ -60,7 +65,7 @@ body {
   content: "";
   position: absolute;
   width: 80px;
-  border: 6px solid #292a2b;
+
   bottom: -3px;
   left: 50px;
   z-index: 2;
@@ -143,11 +148,55 @@ body {
   }
 }
 
-p:last-child {
-  color: blue;
+// p:last-child {
+//   color: blue;
+// }
+// p:only-child {
+//   color: red;
+// }
+
+.calculator {
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  font-family: system-ui;
+  h1 {
+    background: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  span {
+    display: block;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: monospace;
+  }
 }
-p:only-child {
-  color: red;
+.move {
+  display: block;
+  padding: 10px;
+  height: 400px;
+  width: 400px;
+  background-color: #591e12;
+  color: white;
+  font-family: $primary-font;
+  margin: 40px auto;
+  p {
+    text-indent: 2em;
+  }
+  border-radius: 5px;
+}
+.move:hover {
+  width: 800px;
+  height: 800px;
+  box-shadow: 10px 10px 10px gray;
+  background-color: #406c5c;
+  border: 4px #ccc dotted;
+  display: block;
+  font-size: 3em;
+  /* text-transform: uppercase; */
 }
 
 /*# sourceMappingURL=style.css.map */
