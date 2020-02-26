@@ -29,7 +29,7 @@
 	- [Modules](nodejs/first-app/modules)
 
 ## HTML and CSS
-> In this module we learnt HTML / CSS and SASS
+> Lorem ipsum dolor sit amet.
 
 Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, nam.
 
