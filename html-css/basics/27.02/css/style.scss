@@ -1,0 +1,27 @@
+body {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration-color: blanchedalmond;
+}
+
+a:active {
+  color: pink;
+}
+
+a:link {
+  color: magenta;
+}
+
+a:visited {
+  color: brown;
+}
+a:hover {
+  background-color: red;
+  transition: 2s;
+}
+
+p {
+  font-size: 1rem;
+}
