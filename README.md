@@ -16,7 +16,7 @@
 -  [Functional Programming](javascript/)
 -  [Intermediate Algorithm Scripting](javascript/)
 -  [JavaScript Algorithms and Data Structures Projects](javascript/)
--  [Daily Classes and Exercises](javascript/classes-fbw26/classes)
+-  ** [Daily Classes and Exercises](javascript/classes-fbw26/classes) **
 -  [Tests](javascript/classes-fbw26/tests)
 -  [Challenges](javascript/challenges)
 
@@ -29,9 +29,9 @@
 	- [Modules](nodejs/first-app/modules)
 
 ## HTML and CSS
-> Lorem ipsum dolor sit amet.
+> HTML / CSS / SASS
 
-Lorem ipsum dolor sit amet.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, nam.
+In this section we learnt how to use HTML / CSS and new technologies like SASS.
 
 - [Daily Classes / Exercises](html-css/basics)
 - [Projects](html-css/projects)
