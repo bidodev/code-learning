@@ -16,7 +16,7 @@
 -  [Functional Programming](javascript/)
 -  [Intermediate Algorithm Scripting](javascript/)
 -  [JavaScript Algorithms and Data Structures Projects](javascript/)
--  ** [Daily Classes and Exercises](javascript/classes-fbw26/classes) **
+-  [Daily Classes and Exercises](javascript/classes-fbw26/classes)
 -  [Tests](javascript/classes-fbw26/tests)
 -  [Challenges](javascript/challenges)
 
