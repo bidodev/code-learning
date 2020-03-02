@@ -16,10 +16,10 @@ html {
 /* element,element Selector
 element  AND element 
 */
-span,
+/* span,
 div {
   background-color: turquoise;
-}
+} */
 /* element element Selector
 element inside element 
 */
@@ -67,6 +67,11 @@ span ~ p {
   border-radius: 20%;
 }
 
+input:focus {
+  outline: none;
+  border: 2px solid pink;
+  box-shadow: 3px 3px 3px #ccc;
+}
 /* [attribute=value] Selector  */
 
 /* [attribute~=value] Selector
@@ -103,6 +108,10 @@ contains the substring */
 a:visited {
   color: pink;
 }
+input[name="firstName"] + span {
+  color: red;
+}
+
 /* :nth-child() */
 
 /* ::after  
