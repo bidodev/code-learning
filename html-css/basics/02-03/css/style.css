@@ -1,0 +1,109 @@
+/* CSS selectors */
+
+/* Element selector */
+html {
+  font-size: 16px;
+  margin: 0;
+}
+/* #ID selector */
+#random-text {
+  color: teal;
+}
+/* .class selector */
+.main-page {
+  background-color: yellow;
+}
+/* element,element Selector
+element  AND element 
+*/
+span,
+div {
+  background-color: turquoise;
+}
+/* element element Selector
+element inside element 
+*/
+div p {
+  color: firebrick;
+}
+/* element>element	 Selector  
+element parent element */
+div > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* element+element  Selector
+element immediately after element */
+div + span {
+  color: orangered;
+}
+
+/* https://www.w3schools.com/css/css_attribute_selectors.asp*/
+/* element1~element2 Selector 
+element preceded element */
+span ~ p {
+  color: peru;
+}
+/* [attribute] Selector */
+[type] {
+  background-color: olivedrab;
+}
+[name] {
+  background-color: palegreen;
+}
+[type="submit"] {
+  background-color: tomato;
+}
+
+[alt~="sun"] {
+  margin: 0 auto;
+  width: 80%;
+  display: inline-block;
+  background-color: yellowgreen;
+  border: 2px solid;
+}
+
+[alt^="the"] {
+  border-radius: 20%;
+}
+
+/* [attribute=value] Selector  */
+
+/* [attribute~=value] Selector
+containing the value */
+
+/* [attribute^=value] Selector
+begins with the value */
+
+/* [attribute$=value] Selector
+value ends with  */
+
+[alt$="tree"] {
+  padding: 1rem;
+}
+
+/* [attribute*=value] Selector
+contains the substring */
+
+[class*="text"] {
+  display: inline;
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  transition: all 2s;
+}
+/* pseudo class  */
+/* :hover */
+[class*="text"]:hover {
+  background-color: red;
+  transform: scale(1.5);
+}
+
+/* :visited */
+a:visited {
+  color: pink;
+}
+/* :nth-child() */
+
+/* ::after  
+:after css2 and ::after is css3*/
