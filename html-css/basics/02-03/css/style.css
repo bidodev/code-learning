@@ -112,6 +112,15 @@ input[name="firstName"] + span {
   color: red;
 }
 
+tr:nth-child(even) {
+  background-color: navy;
+}
+tr:nth-child(odd) {
+  background-color: green;
+}
+tr:last-child(2) {
+  background-color: orchid;
+}
 /* :nth-child() */
 
 /* ::after  

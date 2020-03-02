@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.periodic__table {
+  width: 100%;
+  margin: 10rem auto;
+}
+
+table,
+td {
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid black;
+  padding: 3rem;
+  border-collapse: separate;
+  border-spacing: 20px 20px;
+}
+
+table td,
+td td {
+  padding: 2rem;
+  width: 2rem;
+  vertical-align: bottom;
+  border-radius: 0.5rem;
+}
+
+table td:empty,
+td td:empty {
+  border: 0px;
+}
+
+table tr,
+td tr {
+  /* last column from element 1 (helium) until 6 (radon)*/
+  /* column from Fluorine to Astatine */
+  /* column from Oxygen to Selenium */
+  /* column from Telurium to Polonium */
+  /* column from Nitrogen to Phosphorus */
+  /* column from Arsenic to Antimony */
+  /* first column from Lithium to Francium*/
+  /* second column from Berylium to Radium*/
+  /* The big green square in the midle */
+  /* column from Aluminum to Ununtrium */
+  /* column from Tim to Flevorium */
+  /* column from Solicum to Germanium */
+  /* Last 2 rows of the table*/
+}
+
+table tr:nth-child(n + 1):nth-child(-n + 6) td:last-child,
+td tr:nth-child(n + 1):nth-child(-n + 6) td:last-child {
+  background-color: #a569bd;
+}
+
+table tr:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2),
+td tr:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2) {
+  background-color: orange;
+}
+
+table tr:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3),
+td tr:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3) {
+  background-color: yellow;
+}
+
+table tr:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3),
+td tr:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
+  background-color: #a55252;
+}
+
+table tr:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4),
+td tr:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
+  background-color: yellow;
+}
+
+table tr:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4),
+td tr:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4) {
+  background-color: #a55252;
+}
+
+table tr:nth-child(n + 2):nth-child(-n + 7) td:first-child,
+td tr:nth-child(n + 2):nth-child(-n + 7) td:first-child {
+  background-color: #3498db;
+}
+
+table tr:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2),
+td tr:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2) {
+  background-color: rosybrown;
+}
+
+table tr:nth-child(n + 4):nth-child(-n + 7) td:nth-child(n + 3):nth-child(-n + 12),
+td tr:nth-child(n + 4):nth-child(-n + 7) td:nth-child(n + 3):nth-child(-n + 12) {
+  background-color: green;
+}
+
+table tr:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6),
+td tr:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6) {
+  background-color: rgba(165, 82, 82, 0.5);
+}
+
+table tr:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5),
+td tr:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5) {
+  background-color: rgba(165, 82, 82, 0.5);
+}
+
+table tr:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5),
+td tr:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5) {
+  background-color: #a55252;
+}
+
+table tr:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15),
+td tr:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15) {
+  background-color: #33f59c;
+}
+
+table tr:last-child td:nth-child(n + 2):nth-child(-n + 15),
+td tr:last-child td:nth-child(n + 2):nth-child(-n + 15) {
+  background-color: #3498db;
+}
+
+table tr:first-child td:nth-child(1),
+td tr:first-child td:nth-child(1) {
+  background-color: yellow;
+}
+
+table tr:nth-child(2) td:nth-last-child(6),
+td tr:nth-child(2) td:nth-last-child(6) {
+  background-color: #a55252;
+}
+
+table tr:nth-last-child(3) td:last-child,
+td tr:nth-last-child(3) td:last-child {
+  background-color: rosybrown;
+}
+
+table tr:nth-last-child(3) td:nth-last-child(2),
+td tr:nth-last-child(3) td:nth-last-child(2) {
+  background-color: #3498db;
+}
+
+table tr:nth-last-child(3) td:nth-last-child(3),
+td tr:nth-last-child(3) td:nth-last-child(3) {
+  background-color: #a569bd;
+}
+
+table tr:nth-last-child(3) td:nth-last-child(4),
+td tr:nth-last-child(3) td:nth-last-child(4) {
+  background-color: orange;
+}
+
+table tr:nth-last-child(4) td:nth-last-child(4),
+td tr:nth-last-child(4) td:nth-last-child(4) {
+  background-color: rgba(165, 82, 82, 0.5);
+}
+
+table tr:nth-child(2) td:nth-last-child(5),
+td tr:nth-child(2) td:nth-last-child(5) {
+  background-color: yellow;
+}
+/*# sourceMappingURL=main.css.map */
