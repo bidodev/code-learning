@@ -32,120 +32,121 @@ table {
       border: 0px;
     }
   }
+}
 
-  tr {
-    /* last column from element 1 (helium) until 6 (radon)*/
-    &:nth-child(n + 1):nth-child(-n + 6) td:last-child {
-      background-color: $color-viol;
-    }
-    /* column from Fluorine to Astatine */
-    &:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2) {
-      background-color: $color-orange;
-    }
-    /* column from Oxygen to Selenium */
-    &:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3) {
-      background-color: $color-yellow;
-    }
-    /* column from Telurium to Polonium */
-    &:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
-      background-color: rgba(165, 82, 82, 1);
-    }
-    /* column from Nitrogen to Phosphorus */
-    &:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
-      background-color: $color-yellow;
-    }
+tr {
+  /* last column from element 1 (helium) until 6 (radon)*/
+  &:nth-child(n + 1):nth-child(-n + 6) td:last-child {
+    background-color: $color-viol;
+  }
+  /* column from Fluorine to Astatine */
+  &:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2) {
+    background-color: $color-orange;
+  }
+  /* column from Oxygen to Selenium */
+  &:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3) {
+    background-color: $color-yellow;
+  }
+  /* column from Telurium to Polonium */
+  &:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
+    background-color: $color-dunno;
+  }
+  /* column from Nitrogen to Phosphorus */
+  &:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
+    background-color: $color-yellow;
+  }
 
-    /* column from Arsenic to Antimony */
-    &:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4) {
-      background-color: rgba(165, 82, 82, 1);
-    }
+  /* column from Arsenic to Antimony */
+  &:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4) {
+    background-color: $color-dunno;
+  }
 
-    /* first column from Lithium to Francium*/
-    &:nth-child(n + 2):nth-child(-n + 7) td:first-child {
-      background-color: $color-blue;
-    }
+  /* first column from Lithium to Francium*/
+  &:nth-child(n + 2):nth-child(-n + 7) td:first-child {
+    background-color: $color-blue;
+  }
 
-    /* second column from Berylium to Radium*/
-    &:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2) {
-      background-color: rosybrown;
-    }
+  /* second column from Berylium to Radium*/
+  &:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2) {
+    background-color: $color-rosy;
+  }
 
-    /* The big green square in the midle 2 rows */
-    &:nth-child(n + 4):nth-child(-n + 5)
-      td:nth-child(n + 3):nth-child(-n + 12) {
-      background-color: $color-green;
-    }
-    /* if I put all in a line, for some reason it overwright the empty blue-light and empty blue*/
-    &:nth-child(n + 6):nth-child(-n + 7)
-      td:nth-child(n + 4):nth-child(-n + 12) {
-      background-color: $color-green;
-    }
+  /* The big green square in the midle 2 rows */
+  &:nth-child(n + 4):nth-child(-n + 5) td:nth-child(n + 3):nth-child(-n + 12) {
+    background-color: $color-green;
+  }
+  /* if I put all in a line, for some reason it overwright the empty blue-light and empty blue*/
+  &:nth-child(n + 6):nth-child(-n + 7) td:nth-child(n + 4):nth-child(-n + 12) {
+    background-color: $color-green;
+  }
 
-    /* column from Aluminum to Ununtrium */
-    &:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6) {
-      background-color: rgba(165, 82, 82, 0.5);
-    }
+  /* column from Aluminum to Ununtrium */
+  &:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6) {
+    background-color: $color-third;
+  }
 
-    /* column from Tim to Flevorium */
-    &:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5) {
-      background-color: rgba(165, 82, 82, 0.5);
-    }
+  /* column from Tim to Flevorium */
+  &:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5) {
+    background-color: $color-third;
+  }
 
-    /* column from Solicum to Germanium */
-    &:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5) {
-      background-color: rgba(165, 82, 82, 1);
-    }
+  /* column from Solicum to Germanium */
+  &:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5) {
+    background-color: $color-dunno;
+  }
 
-    /* Last 2 rows of the table*/
-    &:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15) {
-      background-color: $color-light-blue;
-    }
-    &:last-child td:nth-child(n + 2):nth-child(-n + 15) {
-      background-color: $color-blue;
-    }
+  /* Last 2 rows of the table*/
+  &:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15) {
+    background-color: $color-light-blue;
+  }
 
-    // //weirdos guys in the family
-    //Hydrogen
-    &:first-child td:nth-child(1) {
-      background-color: $color-yellow;
-    }
-    //Boron
-    &:nth-child(2) td:nth-last-child(6) {
-      background-color: rgba(165, 82, 82, 1);
-    }
-    //Unonoctium
-    &:nth-last-child(3) td:last-child {
-      background-color: rosybrown;
-    }
-    //Ununseptium
-    &:nth-last-child(3) td:nth-last-child(2) {
-      background-color: $color-blue;
-    }
-    //Livermorium
-    &:nth-last-child(3) td:nth-last-child(3) {
-      background-color: $color-viol;
-    }
-    //Livermorium
-    &:nth-last-child(3) td:nth-last-child(4) {
-      background-color: $color-orange;
-    }
-    //Bismuth
-    &:nth-last-child(4) td:nth-last-child(4) {
-      background-color: rgba(165, 82, 82, 0.5);
-    }
-    //Carbon
-    &:nth-child(2) td:nth-last-child(5) {
-      background-color: $color-yellow;
-    }
+  &:last-child td:nth-child(n + 2):nth-child(-n + 15) {
+    background-color: $color-blue;
+  }
 
-    //Boron
-    &:nth-child(6) td:nth-last-child(16) {
-      background-color: $color-light-blue;
-      border: 1px solid black;
-    }
-    &:nth-child(7) td:nth-last-child(16) {
-      background-color: $color-blue;
-      border: 1px solid black;
-    }
+  // //weirdos guys in the family
+  //Hydrogen
+  &:first-child td:nth-child(1) {
+    background-color: $color-yellow;
+  }
+  //Boron
+  &:nth-child(2) td:nth-last-child(6) {
+    background-color: $color-dunno;
+  }
+  //Unonoctium
+  &:nth-last-child(3) td:last-child {
+    background-color: $color-rosy;
+  }
+  //Ununseptium
+  &:nth-last-child(3) td:nth-last-child(2) {
+    background-color: $color-blue;
+  }
+  //Livermorium
+  &:nth-last-child(3) td:nth-last-child(3) {
+    background-color: $color-viol;
+  }
+  //Livermorium
+  &:nth-last-child(3) td:nth-last-child(4) {
+    background-color: $color-orange;
+  }
+  //Bismuth
+  &:nth-last-child(4) td:nth-last-child(4) {
+    background-color: $color-third;
+  }
+  //Carbon
+  &:nth-child(2) td:nth-last-child(5) {
+    background-color: $color-yellow;
+  }
+
+  //empty blue-light
+  &:nth-child(6) td:nth-last-child(16) {
+    background-color: $color-light-blue;
+    border: 1px solid black;
+  }
+
+  //empty blue-dark
+  &:nth-child(7) td:nth-last-child(16) {
+    background-color: $color-blue;
+    border: 1px solid black;
   }
 }
