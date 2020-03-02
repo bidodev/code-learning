@@ -9,7 +9,6 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -22,31 +21,35 @@ body {
   margin: 10rem auto;
 }
 
-table,
-td {
+table {
   margin: 0 auto;
   width: 90%;
   border: 1px solid black;
   padding: 3rem;
   border-collapse: separate;
-  border-spacing: 20px 20px;
+  border-spacing: 2rem 2rem;
+  background: #cacbdb;
+  background: linear-gradient(94deg, #cacbdb 0%, #e5f9f2 72%, #9caea2 93%);
+  -webkit-box-shadow: 0 1rem 5rem black;
+          box-shadow: 0 1rem 5rem black;
 }
 
-table td,
-td td {
+table td {
   padding: 2rem;
   width: 2rem;
-  vertical-align: bottom;
+  border: 1px solid black;
   border-radius: 0.5rem;
+  font-size: 2rem;
+  font-style: italic;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-table td:empty,
-td td:empty {
+table td:empty {
   border: 0px;
 }
 
-table tr,
-td tr {
+table tr {
   /* last column from element 1 (helium) until 6 (radon)*/
   /* column from Fluorine to Astatine */
   /* column from Oxygen to Selenium */
@@ -55,120 +58,113 @@ td tr {
   /* column from Arsenic to Antimony */
   /* first column from Lithium to Francium*/
   /* second column from Berylium to Radium*/
-  /* The big green square in the midle */
+  /* The big green square in the midle 2 rows */
+  /* if I put all in a line, for some reason it overwright the empty blue-light and empty blue*/
   /* column from Aluminum to Ununtrium */
   /* column from Tim to Flevorium */
   /* column from Solicum to Germanium */
   /* Last 2 rows of the table*/
 }
 
-table tr:nth-child(n + 1):nth-child(-n + 6) td:last-child,
-td tr:nth-child(n + 1):nth-child(-n + 6) td:last-child {
+table tr:nth-child(n + 1):nth-child(-n + 6) td:last-child {
   background-color: #a569bd;
 }
 
-table tr:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2),
-td tr:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2) {
-  background-color: orange;
+table tr:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2) {
+  background-color: #d35400;
 }
 
-table tr:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3),
-td tr:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3) {
-  background-color: yellow;
+table tr:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3) {
+  background-color: #f4d03f;
 }
 
-table tr:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3),
-td tr:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
+table tr:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
   background-color: #a55252;
 }
 
-table tr:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4),
-td tr:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
-  background-color: yellow;
+table tr:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
+  background-color: #f4d03f;
 }
 
-table tr:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4),
-td tr:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4) {
+table tr:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4) {
   background-color: #a55252;
 }
 
-table tr:nth-child(n + 2):nth-child(-n + 7) td:first-child,
-td tr:nth-child(n + 2):nth-child(-n + 7) td:first-child {
+table tr:nth-child(n + 2):nth-child(-n + 7) td:first-child {
   background-color: #3498db;
 }
 
-table tr:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2),
-td tr:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2) {
+table tr:nth-child(n + 2):nth-child(-n + 7) td:nth-child(2) {
   background-color: rosybrown;
 }
 
-table tr:nth-child(n + 4):nth-child(-n + 7) td:nth-child(n + 3):nth-child(-n + 12),
-td tr:nth-child(n + 4):nth-child(-n + 7) td:nth-child(n + 3):nth-child(-n + 12) {
-  background-color: green;
+table tr:nth-child(n + 4):nth-child(-n + 5) td:nth-child(n + 3):nth-child(-n + 12) {
+  background-color: #28b463;
 }
 
-table tr:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6),
-td tr:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6) {
+table tr:nth-child(n + 6):nth-child(-n + 7) td:nth-child(n + 4):nth-child(-n + 12) {
+  background-color: #28b463;
+}
+
+table tr:nth-child(n + 3):nth-child(-n + 7) td:nth-last-child(6) {
   background-color: rgba(165, 82, 82, 0.5);
 }
 
-table tr:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5),
-td tr:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5) {
+table tr:nth-child(n + 5):nth-child(-n + 7) td:nth-last-child(5) {
   background-color: rgba(165, 82, 82, 0.5);
 }
 
-table tr:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5),
-td tr:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5) {
+table tr:nth-child(n + 3):nth-child(-n + 4) td:nth-last-child(5) {
   background-color: #a55252;
 }
 
-table tr:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15),
-td tr:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15) {
-  background-color: #33f59c;
+table tr:nth-last-child(2) td:nth-child(n + 2):nth-child(-n + 15) {
+  background-color: #3498dbb0;
 }
 
-table tr:last-child td:nth-child(n + 2):nth-child(-n + 15),
-td tr:last-child td:nth-child(n + 2):nth-child(-n + 15) {
+table tr:last-child td:nth-child(n + 2):nth-child(-n + 15) {
   background-color: #3498db;
 }
 
-table tr:first-child td:nth-child(1),
-td tr:first-child td:nth-child(1) {
-  background-color: yellow;
+table tr:first-child td:nth-child(1) {
+  background-color: #f4d03f;
 }
 
-table tr:nth-child(2) td:nth-last-child(6),
-td tr:nth-child(2) td:nth-last-child(6) {
+table tr:nth-child(2) td:nth-last-child(6) {
   background-color: #a55252;
 }
 
-table tr:nth-last-child(3) td:last-child,
-td tr:nth-last-child(3) td:last-child {
+table tr:nth-last-child(3) td:last-child {
   background-color: rosybrown;
 }
 
-table tr:nth-last-child(3) td:nth-last-child(2),
-td tr:nth-last-child(3) td:nth-last-child(2) {
+table tr:nth-last-child(3) td:nth-last-child(2) {
   background-color: #3498db;
 }
 
-table tr:nth-last-child(3) td:nth-last-child(3),
-td tr:nth-last-child(3) td:nth-last-child(3) {
+table tr:nth-last-child(3) td:nth-last-child(3) {
   background-color: #a569bd;
 }
 
-table tr:nth-last-child(3) td:nth-last-child(4),
-td tr:nth-last-child(3) td:nth-last-child(4) {
-  background-color: orange;
+table tr:nth-last-child(3) td:nth-last-child(4) {
+  background-color: #d35400;
 }
 
-table tr:nth-last-child(4) td:nth-last-child(4),
-td tr:nth-last-child(4) td:nth-last-child(4) {
+table tr:nth-last-child(4) td:nth-last-child(4) {
   background-color: rgba(165, 82, 82, 0.5);
 }
 
-table tr:nth-child(2) td:nth-last-child(5),
-td tr:nth-child(2) td:nth-last-child(5) {
-  background-color: yellow;
+table tr:nth-child(2) td:nth-last-child(5) {
+  background-color: #f4d03f;
+}
+
+table tr:nth-child(6) td:nth-last-child(16) {
+  background-color: #3498dbb0;
+  border: 1px solid black;
+}
+
+table tr:nth-child(7) td:nth-last-child(16) {
+  background-color: #3498db;
+  border: 1px solid black;
 }
 /*# sourceMappingURL=main.css.map */
