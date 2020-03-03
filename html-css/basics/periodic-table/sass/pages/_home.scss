@@ -1,33 +1,21 @@
-.periodic__table {
-  margin: 5rem auto;
-  width: 80%;
-}
-
 table {
-  margin: 0 auto;
-  padding: 5rem;
-  border: 1px solid black;
-  border-spacing: 2rem 2rem;
-  background: rgb(202, 203, 219);
-  background: linear-gradient(
-    94deg,
-    rgba(202, 203, 219, 1) 0%,
-    rgba(229, 249, 242, 1) 72%,
-    rgba(156, 174, 162, 1) 93%
-  );
-  box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.2);
+  margin: 4rem auto;
+  width: 90%;
 
   td {
-    width: 5rem;
-    height: 5rem;
+    width: 4%;
     border: 1px solid black;
-    border-radius: 0.5rem;
-    font-size: 4rem;
-    font-style: italic;
     text-align: center;
-
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    font-style: italic;
+    padding: 2%;
+    box-shadow: inset 0 0 2px 2px #fff;
     &:empty {
       border: 0px;
+    }
+    &:hover {
+      transform: scale(2);
     }
   }
 }

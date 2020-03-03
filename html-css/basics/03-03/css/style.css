@@ -1,0 +1,11 @@
+body {
+  background-color: black;
+}
+
+div > h1 {
+  color: white;
+}
+
+[type="text"]::placeholder {
+  color: orange;
+}
