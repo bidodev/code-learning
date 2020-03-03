@@ -1,14 +1,12 @@
 .periodic__table {
-  width: 100%;
-  margin: 10rem auto;
+  margin: 5rem auto;
+  width: 80%;
 }
 
 table {
   margin: 0 auto;
-  width: 90%;
+  padding: 5rem;
   border: 1px solid black;
-  padding: 3rem;
-  border-collapse: separate;
   border-spacing: 2rem 2rem;
   background: rgb(202, 203, 219);
   background: linear-gradient(
@@ -17,16 +15,16 @@ table {
     rgba(229, 249, 242, 1) 72%,
     rgba(156, 174, 162, 1) 93%
   );
-  box-shadow: 0 1rem 5rem black;
+  box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.2);
 
   td {
-    padding: 2rem;
-    width: 2rem;
+    width: 5rem;
+    height: 5rem;
     border: 1px solid black;
     border-radius: 0.5rem;
-    font-size: 2rem;
+    font-size: 4rem;
     font-style: italic;
-    transition: all 1s;
+    text-align: center;
 
     &:empty {
       border: 0px;
@@ -43,17 +41,30 @@ tr {
   &:nth-child(n + 2):nth-child(-n + 6) td:nth-last-child(2) {
     background-color: $color-orange;
   }
+
   /* column from Oxygen to Selenium */
   &:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3) {
     background-color: $color-yellow;
   }
-  /* column from Telurium to Polonium */
-  &:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
-    background-color: $color-dunno;
-  }
+
   /* column from Nitrogen to Phosphorus */
   &:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
     background-color: $color-yellow;
+  }
+
+  //Carbon
+  &:nth-child(2) td:nth-last-child(5) {
+    background-color: $color-yellow;
+  }
+
+  //Hydrogen
+  &:first-child td:nth-child(1) {
+    background-color: $color-yellow;
+  }
+
+  /* column from Telurium to Polonium */
+  &:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
+    background-color: $color-dunno;
   }
 
   /* column from Arsenic to Antimony */
@@ -105,10 +116,7 @@ tr {
   }
 
   // //weirdos guys in the family
-  //Hydrogen
-  &:first-child td:nth-child(1) {
-    background-color: $color-yellow;
-  }
+
   //Boron
   &:nth-child(2) td:nth-last-child(6) {
     background-color: $color-dunno;
@@ -132,10 +140,6 @@ tr {
   //Bismuth
   &:nth-last-child(4) td:nth-last-child(4) {
     background-color: $color-third;
-  }
-  //Carbon
-  &:nth-child(2) td:nth-last-child(5) {
-    background-color: $color-yellow;
   }
 
   //empty blue-light

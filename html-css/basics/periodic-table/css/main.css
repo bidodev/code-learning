@@ -11,38 +11,35 @@ html {
   font-size: 62.5%;
 }
 
-body {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 .periodic__table {
-  width: 100%;
-  margin: 10rem auto;
+  margin: 5rem auto;
+  width: 80%;
 }
 
 table {
   margin: 0 auto;
-  width: 90%;
+  padding: 5rem;
   border: 1px solid black;
-  padding: 3rem;
-  border-collapse: separate;
   border-spacing: 2rem 2rem;
   background: #cacbdb;
   background: linear-gradient(94deg, #cacbdb 0%, #e5f9f2 72%, #9caea2 93%);
-  -webkit-box-shadow: 0 1rem 5rem black;
-          box-shadow: 0 1rem 5rem black;
+  -webkit-box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.2);
 }
 
 table td {
-  padding: 2rem;
-  width: 2rem;
+  width: 5rem;
+  height: 5rem;
   border: 1px solid black;
   border-radius: 0.5rem;
-  font-size: 2rem;
+  font-size: 4rem;
   font-style: italic;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  text-align: center;
 }
 
 table td:empty {
@@ -53,8 +50,8 @@ tr {
   /* last column from element 1 (helium) until 6 (radon)*/
   /* column from Fluorine to Astatine */
   /* column from Oxygen to Selenium */
-  /* column from Telurium to Polonium */
   /* column from Nitrogen to Phosphorus */
+  /* column from Telurium to Polonium */
   /* column from Arsenic to Antimony */
   /* first column from Lithium to Francium*/
   /* second column from Berylium to Radium*/
@@ -78,12 +75,20 @@ tr:nth-child(n + 2):nth-child(-n + 4) td:nth-last-child(3) {
   background-color: #f4d03f;
 }
 
-tr:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
-  background-color: #a55252;
-}
-
 tr:nth-child(n + 2):nth-child(-n + 3) td:nth-last-child(4) {
   background-color: #f4d03f;
+}
+
+tr:nth-child(2) td:nth-last-child(5) {
+  background-color: #f4d03f;
+}
+
+tr:first-child td:nth-child(1) {
+  background-color: #f4d03f;
+}
+
+tr:nth-child(n + 5):nth-child(-n + 6) td:nth-last-child(3) {
+  background-color: #a55252;
 }
 
 tr:nth-child(n + 4):nth-child(-n + 5) td:nth-last-child(4) {
@@ -126,10 +131,6 @@ tr:last-child td:nth-child(n + 2):nth-child(-n + 15) {
   background-color: #3498db;
 }
 
-tr:first-child td:nth-child(1) {
-  background-color: #f4d03f;
-}
-
 tr:nth-child(2) td:nth-last-child(6) {
   background-color: #a55252;
 }
@@ -152,10 +153,6 @@ tr:nth-last-child(3) td:nth-last-child(4) {
 
 tr:nth-last-child(4) td:nth-last-child(4) {
   background-color: rgba(165, 82, 82, 0.5);
-}
-
-tr:nth-child(2) td:nth-last-child(5) {
-  background-color: #f4d03f;
 }
 
 tr:nth-child(6) td:nth-last-child(16) {
