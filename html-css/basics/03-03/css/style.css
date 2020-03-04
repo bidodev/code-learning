@@ -24,14 +24,8 @@
   font-weight: bold;
   font-size: 40px;
 }
+
 /* display:none vs opacity: 0 */
-.tree {
-  width: 200px;
-  height: 150px;
-  box-shadow: 3px 3px 3px rgba(150, 245, 221, 0.6);
-  opacity: 0.5;
-  filter: grayscale(50);
-}
 .tree:hover {
   transition: 2s ease-in-out;
   width: 209px;
@@ -63,6 +57,58 @@
 .form-input {
   width: 100vw;
   height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.text-img {
+  text-align: center;
+}
+/* .text-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.text-img-2 {
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
+  background-color: red;
+  color: white;
+}
+
+.text-2::first-letter {
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.tree {
+  width: 200px;
+  height: 150px;
+  box-shadow: 3px 3px 3px rgba(150, 245, 221, 0.6);
+  opacity: 0.5;
+  filter: grayscale(50);
+}
+
+.text-img img {
+  width: auto;
+  margin: auto;
 }
 /* visual content like img */
 /*  % , border-radius */
