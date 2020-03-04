@@ -4,17 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Hello</title>
+    <title>Pseudo classes and elements</title>
   </head>
   <body>
-    <div>
-      <h1>Welcome to my Page</h1>
+    <div class="menu">
+      Home <br />
+      Call me
     </div>
-    <form action="">
-      <input type="text" id="1" placeholder="Enter your name" />
-      <input type="password" id="2" placeholder="Your password" />
-      <input type="submit" />
-      <input type="reset" />
-    </form>
+    <div class="main-text">
+      <h1>Hi, welcome to my page</h1>
+    </div>
+    <div class="form-input">
+      <form action="index.js" method="GET">
+        <input
+          type="text"
+          name="firstName"
+          id="1"
+          placeholder="enter your name"
+          required
+        /><br />
+        <input
+          type="password"
+          name="password"
+          id="2"
+          placeholder="your password"
+        /><br />
+        <input type="submit" value="Send" />
+        <input type="reset" value="Clear" />
+      </form>
+    </div>
+
+    <div class="text">
+      There is a cool cat, next to the tree.
+    </div>
+    <img class="tree" src="./img/tree.jpeg" alt="Tree and something" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit earum in
+      magnam corrupti! Tenetur tempora accusamus veniam illo debitis est.
+    </p>
   </body>
 </html>
