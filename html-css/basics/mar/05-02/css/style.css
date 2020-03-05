@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+  font-size: 16px;
+}
+body {
+  /* margin: 0 auto; */
+  /* background-color: aqua; */
+}
+/* background-image  */
+
+.main-text {
+  display: flex;
+  /* padding: 2rem; */
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: aqua;
+  background-image: url(../img/fly.gif), url(../img/sky.png);
+  background-repeat: repeat-x, no-repeat;
+  background-position: center;
+  background-size: 80rem, cover;
+  /* background: url(../img/sky.png),  no-repeat center; */
+}
+h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #0c0c0c, #9c3809);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* background-clip: border-box; */
+
+.ex1 {
+  border: 4px black dashed;
+  padding: 20px;
+  background-color: aqua;
+  background-clip: border-box;
+}
+.ex2 {
+  border: 4px black dashed;
+  padding: 20px;
+  background-color: aqua;
+  background-clip: content-box;
+}
+.ex3 {
+  border: 4px black dashed;
+  padding: 20px;
+  background-color: aqua;
+  background-clip: padding-box;
+}
+.ex5 {
+  background-image: url(../img/bird.png);
+  background-size: 30rem;
+  background-position: center;
+  background-attachment: fixed;
+}
