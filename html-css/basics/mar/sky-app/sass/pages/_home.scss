@@ -1,0 +1,16 @@
+.fancy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba($color-white, 0.2),
+      rgba($color-black, 0.8)
+    ),
+    url(../img/a.gif), url(../img/cloud.gif);
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: cover, 40rem, cover;
+  font-size: 5rem;
+  padding: 10rem;
+  background-attachment: fixed;
+  line-height: 1.5;
+}
