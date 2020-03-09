@@ -35,4 +35,9 @@ body {
 .src span {
   font-style: italic;
 }
+
+i {
+  color: blue;
+  font-size: larger;
+}
 /*# sourceMappingURL=style.css.map */
