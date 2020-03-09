@@ -7,14 +7,77 @@
 }
 
 html {
+  //define size 1 rem
   font-size: 62.5%;
+  font-kerning: none;
+  --color-font: firebrick;
+  --padding-main-text: 15rem;
 }
 
 body {
   box-sizing: border-box;
-  font-size: 1.6rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+}
 
+div {
+  padding: var(--padding-main-text);
+  font-size: 2rem;
   h1 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-variant-caps: small-caps;
+    direction: rtl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-shadow: 2px 2px 2px black;
+    color: white;
   }
+}
+
+p {
+  padding-top: 5rem;
+  line-height: 3rem;
+  text-align: right;
+  font-size: smaller;
+  font-variant-caps: all-small-caps;
+  text-indent: 10rem;
+  word-spacing: 0.5rem;
+  color: white;
+}
+
+p {
+  word-break: keep-all;
+}
+
+.other {
+  padding-top: 5rem;
+  font-weight: bolder;
+  font-size-adjust: 0.5;
+  font-stretch: expanded;
+  color: var(--color-font);
+}
+
+@font-face {
+  src: url("https://mdn.mozillademos.org/files/16014/LeagueMonoVariable.ttf");
+  font-family: "LeagueMonoVariable";
+  font-style: normal;
+  font-stretch: 1% 500%; /* Required by Chrome */
+}
+
+.container {
+  border: 10px solid #f5f9fa;
+  padding: 0 1rem;
+  font: 1.5rem "LeagueMonoVariable", sans-serif;
+}
+
+.condensed {
+  font-stretch: 50%;
+}
+
+.normal {
+  font-stretch: 100%;
+}
+
+.expanded {
+  font-stretch: 200%;
 }
