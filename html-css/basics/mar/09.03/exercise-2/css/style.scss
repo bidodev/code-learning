@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //define size 1 rem
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  padding: 5rem;
+  line-height: 4rem;
+}
+
+.note {
+}
+.list {
+  padding-left: 5rem;
+}
+
+.holidays {
+  font-style: italic;
+}
+
+.sub {
+  vertical-align: super;
+}
+
+.src {
+  span {
+    font-style: italic;
+  }
+}
