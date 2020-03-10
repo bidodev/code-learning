@@ -2,6 +2,9 @@
 <img src="https://i.imgur.com/8MlmDto.png" align="right" />
 
 # Coding is ![Larning](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
+> “Talk is cheap. Show me the code.” ― Linus Torvalds
+
+
 
 ## Self Learning / Digital Career Institute
 
