@@ -32,9 +32,8 @@
 	- [Modules](nodejs/first-app/modules)
 
 ## HTML and CSS
-> HTML / CSS / SASS
 
-In this section we learnt how to use HTML / CSS and new technologies like SASS.
+In this section we learnt HTML / CSS and new technologies like SASS.
 
 - [Daily Classes / Exercises](html-css/basics)
 - [Projects](html-css/projects)
