@@ -1,15 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
 .container {
   padding: 4rem;
   height: 100vh;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
   grid-template-rows: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 4rem;
 
   grid-template-areas:
-    "box1 box1 box1 "
-    "box2 box2 box4"
-    "box3 box3 box4";
+    "header header header "
+    "div-2nd div-2nd right-side"
+    "div-3rd div-3rd right-side";
 }
 
 .container > div {
@@ -18,17 +22,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2rem;
 }
 
-.box1 {
-  grid-area: box1;
+.header {
+  grid-area: header;
 }
-.box2 {
-  grid-area: box2;
+.div-2nd {
+  grid-area: div-2nd;
 }
-.box3 {
-  grid-area: box3;
+.div-3rd {
+  grid-area: div-3rd;
 }
-.box4 {
-  grid-area: box4;
+.right-side {
+  grid-area: right-side;
 }

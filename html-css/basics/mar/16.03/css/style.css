@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 .container {
   padding: 4rem;
   height: 100vh;
@@ -7,8 +11,8 @@
       grid-template-columns: 2fr 2fr 1fr;
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  gap: 2.5rem;
-      grid-template-areas: "box1 box1 box1 " "box2 box2 box4" "box3 box3 box4";
+  gap: 4rem;
+      grid-template-areas: "header header header " "div-2nd div-2nd right-side" "div-3rd div-3rd right-side";
 }
 
 .container > div {
@@ -23,33 +27,34 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 2rem;
 }
 
-.box1 {
+.header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
-  grid-area: box1;
+  grid-area: header;
 }
 
-.box2 {
+.div-2nd {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: box2;
+  grid-area: div-2nd;
 }
 
-.box3 {
+.div-3rd {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: box3;
+  grid-area: div-3rd;
 }
 
-.box4 {
+.right-side {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
-  grid-area: box4;
+  grid-area: right-side;
 }
 /*# sourceMappingURL=style.css.map */
