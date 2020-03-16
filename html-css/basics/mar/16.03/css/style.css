@@ -9,7 +9,7 @@ html {
   display: grid;
   -ms-grid-columns: 2fr 2fr 1fr;
       grid-template-columns: 2fr 2fr 1fr;
-  grid-auto-rows: 1fr;
+  grid-auto-rows: minmax(1fr, auto);
   gap: 4rem;
       grid-template-areas: "header header header " "div-2nd div-2nd right-side" "div-3rd div-3rd right-side";
 }
@@ -26,7 +26,9 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 1.6;
+  padding: 5rem;
 }
 
 .header {
@@ -55,5 +57,30 @@ html {
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: right-side;
+}
+
+.nested {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr;
+  grid-auto-rows: 7rem;
+  gap: 1rem;
+}
+
+.nested > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: teal;
+  padding: 2rem;
+  margin: 0rem;
+  border: 1px solid white;
 }
 /*# sourceMappingURL=style.css.map */
