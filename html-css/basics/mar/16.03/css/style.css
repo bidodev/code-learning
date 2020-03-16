@@ -4,13 +4,12 @@ html {
 
 .container {
   padding: 4rem;
-  height: 100vh;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 2fr 1fr;
       grid-template-columns: 2fr 2fr 1fr;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
   gap: 4rem;
       grid-template-areas: "header header header " "div-2nd div-2nd right-side" "div-3rd div-3rd right-side";
 }
