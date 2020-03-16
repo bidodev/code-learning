@@ -1,5 +1,5 @@
 .container {
-  padding: 5rem;
+  padding: 4rem;
   height: 100vh;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
@@ -15,7 +15,11 @@
 .container > div {
   background-color: teal;
   border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .box1 {
   grid-area: box1;
 }
@@ -25,7 +29,6 @@
 .box3 {
   grid-area: box3;
 }
-
 .box4 {
   grid-area: box4;
 }
