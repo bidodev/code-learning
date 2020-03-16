@@ -1,9 +1,10 @@
 .container {
+  padding: 5rem;
   height: 100vh;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 3rem;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2.5rem;
 
   grid-template-areas:
     "box1 box1 box1 "
