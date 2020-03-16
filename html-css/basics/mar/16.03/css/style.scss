@@ -45,14 +45,16 @@ html {
   grid-template-columns: 2fr 2fr 1fr;
   grid-auto-rows: 7rem;
   gap: 1rem;
+  color: white;
+  justify-items: start;
 }
 
 .nested > div {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: teal;
+  background-color: brown;
   padding: 2rem;
   margin: 0rem;
-  border: 1px solid white;
+  border: 1px solid black;
 }
