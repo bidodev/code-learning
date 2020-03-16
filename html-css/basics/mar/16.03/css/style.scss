@@ -12,24 +12,20 @@
     "box3 box3 box4";
 }
 
+.container > div {
+  background-color: teal;
+  border: 1px solid black;
+}
 .box1 {
   grid-area: box1;
-  border: 1px solid black;
-  background-color: orangered;
 }
 .box2 {
   grid-area: box2;
-  border: 1px solid black;
-  background-color: teal;
 }
 .box3 {
   grid-area: box3;
-  border: 1px solid black;
-  background-color: pink;
 }
 
 .box4 {
   grid-area: box4;
-  border: 1px solid black;
-  background-color: green;
 }
