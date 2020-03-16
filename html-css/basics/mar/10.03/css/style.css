@@ -1,12 +1,68 @@
-body p {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.bido {
-  background-color: red;
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.bido__box {
-  background-color: 0;
+.container {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(black));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), black);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.container .composition {
+  width: 50%;
+  position: relative;
+}
+
+.container .composition__photo {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 0;
+  outline-offset: 1.5rem;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.container .composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.container .composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+
+.container .composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.container .composition__photo:hover {
+  -webkit-transform: scale(1.1) translateY(-0.5rem);
+          transform: scale(1.1) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  outline: 1.5rem solid #770534;
+  z-index: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.container .composition:hover .container .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 /*# sourceMappingURL=style.css.map */
