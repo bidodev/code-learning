@@ -1,0 +1,22 @@
+body {
+  background: #333;
+}
+
+.box {
+  background: white;
+  width: 20rem;
+  height: 20rem;
+  position: relative;
+  margin: auto;
+  top: 200px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.box:hover {
+  background: red;
+  border-radius: 50%;
+  -webkit-transform: rotateY(135deg);
+          transform: rotateY(135deg);
+}
+/*# sourceMappingURL=transitions.css.map */
