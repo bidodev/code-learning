@@ -1,0 +1,13 @@
+body {
+  p {
+    background-color: red;
+  }
+}
+
+.bido {
+  background-color: red;
+
+  &__box {
+    background-color: blue($color: #000000);
+  }
+}

@@ -1,0 +1,48 @@
+.hamburger {
+  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
+  padding: 1rem;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburguer line */
+.hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+/* top and botton lines*/
+.hamburger > div:before,
+.hamburger > div:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -1rem;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+/* moves line down */
+.hamburger > div:after {
+  top: 1rem;
+}
+
+.hamburger:hover > div {
+  transform: rotate(135deg);
+}
+
+//turn lines into x
+.hamburger:hover > div:before,
+.hamburger:hover > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
