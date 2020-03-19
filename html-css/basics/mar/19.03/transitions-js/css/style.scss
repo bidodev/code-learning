@@ -1,4 +1,70 @@
 * {
   border: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border: 1px solid black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+.nav-list {
+  border: 1px solid black;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+  margin-left: auto;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.home,
+.about {
+  height: 90vh;
+  position: absolute;
+  width: 100%;
+}
+
+.home-content,
+.about-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  img {
+    height: 70%;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+.home {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.about {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
 }
