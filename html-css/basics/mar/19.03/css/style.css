@@ -15,7 +15,6 @@
           justify-content: center;
 }
 
-/* Hamburguer line */
 .hamburger > div {
   position: relative;
   width: 100%;
@@ -32,11 +31,10 @@
           justify-content: center;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  /* moves the last line down */
 }
 
-/* top and botton lines*/
-.hamburger > div:before,
-.hamburger > div:after {
+.hamburger > div:before, .hamburger > div:after {
   content: "";
   position: absolute;
   z-index: 2;
@@ -46,7 +44,6 @@
   background: inherit;
 }
 
-/* moves line down */
 .hamburger > div:after {
   top: 1rem;
 }
@@ -56,8 +53,7 @@
           transform: rotate(135deg);
 }
 
-.hamburger:hover > div:before,
-.hamburger:hover > div:after {
+.hamburger:hover > div:before, .hamburger:hover > div:after {
   top: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
