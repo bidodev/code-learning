@@ -10,7 +10,7 @@ GAME RULES:
 */
 const scores = [0, 0];
 let roundScore = 0;
-let activePlayer = 1;
+let activePlayer = 0;
 
 /* document.querySelector(
   `#current-${activePlayer}`
@@ -41,6 +41,19 @@ document.querySelector(`.btn-roll`).addEventListener("click", () => {
   diceDOM.style.display = "block";
   diceDOM.src = `img/dice-${dice}.png`;
 
+  if (dice !== 1) {
+    roundScore += dice;
+    document.querySelector(`#current-${activePlayer}`).textContent = roundScore;
+  } else {
+    activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
+    roundScore = 0;
+    document.getElementById("current-0").textContent = 0;
+    document.getElementById("current-1").textContent = 0;
+
+    document.querySelector(".player-0-panel").classList.toggle("active");
+    document.querySelector(".player-1-panel").classList.toggle("active");
+    document.querySelector(".dice").style.display = "none";
+  }
+
   //setting a value
-  document.querySelector(`#current-${activePlayer}`).textContent = dice;
 });
