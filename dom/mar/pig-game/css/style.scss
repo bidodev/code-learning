@@ -99,8 +99,9 @@ body {
 .player-current-label {
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 12px;
-  color: #222;
+  font-size: 14px;
+  font-weight: 600;
+  color: #181818;
 }
 
 .player-current-score {
@@ -162,6 +163,7 @@ i {
   transform: translateX(-50%);
   height: 100px;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 
 .winner {

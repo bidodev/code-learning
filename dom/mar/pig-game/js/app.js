@@ -12,6 +12,35 @@ const scores = [0, 0];
 let roundScore = 0;
 let activePlayer = 1;
 
-const dice = Math.floor(Math.random() * 6 + 1);
+/* document.querySelector(
+  `#current-${activePlayer}`
+).innerHTML = `<em> ${dice} </em>`;
+*/
 
-//document.querySelector(`#current-${activePlayer}`).textContent = dice;
+//gettting a value and saving it inside a variable
+// let myVar = document.querySelector(`#score-0`).textContent;
+// console.log(myVar);
+
+//manipulating the css (hiding the .dice)
+//document.querySelector(`.dice`).style.display = "none";
+
+//set all the values to 0
+document.getElementById("score-0").textContent = "0";
+document.getElementById("score-1").textContent = "0";
+
+document.getElementById("current-0").textContent = "0";
+document.getElementById("current-1").textContent = "0";
+
+//do something when click the roll dice button
+document.querySelector(`.btn-roll`).addEventListener("click", () => {
+  //generate a random number
+  const dice = Math.floor(Math.random() * 6 + 1);
+
+  //display the result
+  const diceDOM = document.querySelector(`.dice`);
+  diceDOM.style.display = "block";
+  diceDOM.src = `img/dice-${dice}.png`;
+
+  //setting a value
+  document.querySelector(`#current-${activePlayer}`).textContent = dice;
+});
