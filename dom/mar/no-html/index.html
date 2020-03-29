@@ -5,5 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NO-HTML</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      // create a new Paragraph
+      const newParagraph = document.createElement("p");
+
+      // appendChild();
+      // add the created element to the HTML
+      document.body.appendChild(newParagraph);
+
+      // create a text
+      const helloWorld = document.createTextNode("Hello World..");
+
+      //adding the text to the element
+      newParagraph.appendChild(helloWorld);
+
+      //adding an ID and class for our paragraph
+      newParagraph.id = "p-1";
+      newParagraph.className = "p-style";
+
+      //select all elements byTagName (p)
+      const myParagraphElements = document.getElementsByTagName("p");
+
+      //it will return an array with all paragraphs..
+      //console.log(myParagraphElements);
+      console.log(myParagraphElements[0]);
+
+      //adding a class for all the paragraphs using a for loop
+      const array = myParagraphElements;
+
+      for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        element.className = "another";
+      }
+
+      //getting all elements by the class name.
+      const anotherParagraphs = document.getElementsByClassName("another");
+      console.log("Paragraphs with the class another", anotherParagraphs);
+    </script>
+  </body>
 </html>
