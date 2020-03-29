@@ -15,7 +15,9 @@
       document.body.appendChild(newParagraph);
 
       // create a text
-      const helloWorld = document.createTextNode("Hello World..");
+      const helloWorld = document.createTextNode(
+        "Hello World, This text and style was created only using JavaScript and DOM (Document Object Model)... The index.html has no elements."
+      );
 
       //adding the text to the element
       newParagraph.appendChild(helloWorld);
@@ -42,6 +44,16 @@
       //getting all elements by the class name.
       const anotherParagraphs = document.getElementsByClassName("another");
       console.log("Paragraphs with the class another", anotherParagraphs);
+
+      //giving a color to my paragraph..
+      const myFirstPara = myParagraphElements[0];
+      myFirstPara.style.color = "red";
+      myFirstPara.style.width = "20rem";
+      myFirstPara.style.height = "20rem";
+      myFirstPara.style.backgroundColor = "firebrick";
+      myFirstPara.style.color = "#f1f1f1";
+      myFirstPara.style.padding = "2rem";
+      myFirstPara.style.lineHeight = "1.6";
     </script>
   </body>
 </html>
