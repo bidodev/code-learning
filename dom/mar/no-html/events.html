@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <div id="square">Hello</div>
+    <script>
+      //some DOM events
+      //click
+
+      //doubleclick
+
+      //focus
+
+      //blur
+
+      //mousedown
+
+      //mouseup
+
+      //mouseover
+
+      //mouseout
+
+      //keydown
+
+      //keyup
+
+      //event handler vs event listener
+      const square = document.getElementById("square");
+      square.onclick = () => {
+        /* do something */
+        alert("Hello World..");
+      };
+
+      //sintax event listerner
+      square.addEventListener("click", ourFunction, false);
+    </script>
+  </body>
+</html>
