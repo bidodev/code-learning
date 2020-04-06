@@ -50,19 +50,66 @@ const jane = Object.create(personProto, {
 //we can return a function from a function.
 
 //Passing function as arguments.
+/*
 const years = [1990, 1989, 2010, 1984, 1899];
 
-function arrayCalc(arr, fn) {
+const arrayCalc = (arr, fn) => {
   let result = [];
   for (let index = 0; index < arr.length; index++) {
     const element = arr[index];
     result.push(fn(element));
   }
   return result;
+};
+
+const calcAge = (element) => {
+  return 2020 - element;
+};
+
+function isFullAge(element) {
+  return element >= 18;
 }
 
-function calcAge(element) {
-  return 2016 - element;
+function maxHeartRate(el) {
+  if (el >= 18) {
+    return Math.round(206.9 - 0.67 * el);
+  } else {
+    return -1;
+  }
 }
 
-console.log(arrayCalc(years, calcAge));
+const ages = arrayCalc(years, calcAge);
+console.log(ages);
+
+const fullAges = arrayCalc(ages, isFullAge);
+console.log(fullAges);
+
+//calculate the max hearth rate based on the user age
+const maxRate = arrayCalc(ages, maxHeartRate);
+console.log(maxRate);
+*/
+
+//Functions returning functions.
+/*
+function interviewQuestion(job) {
+  switch (job) {
+    case "designer":
+      return function (name) {
+        console.log(`${name}, Can you please explain what UX design is?`);
+      };
+    case "programmer":
+      return function (name) {
+        console.log(`${name}, Can you please explain what a dot is?`);
+      };
+  }
+}
+
+const designerQuestion = interviewQuestion("designer");
+const programmerQuestion = interviewQuestion("programmer");
+
+designerQuestion("Juca");
+programmerQuestion("Pedro");
+
+//it's evaluated left to right, interviewQuestion returns a function.
+interviewQuestion("designer")("Mark");
+*/
