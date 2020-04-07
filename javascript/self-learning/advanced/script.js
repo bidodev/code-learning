@@ -113,3 +113,34 @@ programmerQuestion("Pedro");
 //it's evaluated left to right, interviewQuestion returns a function.
 interviewQuestion("designer")("Mark");
 */
+
+//Immediately Invoked Function Expressions (IIFE)
+/*
+(function () {
+  const score = Math.floor(Math.random() * 10);
+  console.log(`${score}`);
+})();
+*/
+
+//closures
+/*
+function retirement(retirementAge) {
+  const a = " year left until retirement.";
+
+  return function (yearOfBirth) {
+    const age = 2020 - yearOfBirth;
+    console.log(retirementAge - age + a);
+  };
+}
+
+retirement(66)(1990);
+
+//an inner function has always access to the variables and parameters of its outer function, even after the outer function has returned.
+
+const retirementGer = retirement(65);
+const retirementIceland = retirement(67);
+
+retirementGer(1990);
+*/
+
+//Bind, call and apply
