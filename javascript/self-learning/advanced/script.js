@@ -144,3 +144,42 @@ retirementGer(1990);
 */
 
 //Bind, call and apply
+
+const john = {
+  name: "John",
+  age: 26,
+  job: "teacher",
+  presentation(style, timeOfDay) {
+    if (style === "formal") {
+      console.log(
+        `Good ${timeOfDay}, Ladies and Gentlemen! I am ${this.name}.`
+      );
+    } else if (style === "friendly") {
+      console.log(
+        `Hey! What's up? I am ${this.name}. I wish you all a nice ${timeOfDay}.`
+      );
+    }
+  },
+};
+
+const emily = {
+  name: "Emily",
+  age: 36,
+  job: "Designer",
+};
+
+john.presentation("friendly", "morning");
+
+//method borrowing
+john.presentation.call(emily, "friendly", "afternoon");
+
+//apply
+john.presentation.apply(emily, ["friendly", "afternoon"]);
+
+//bind method
+const johnFriendly = john.presentation.bind(john, "friendly");
+johnFriendly("morning");
+johnFriendly("night");
+
+const emilyFormal = john.presentation.bind(emily, "formal");
+emilyFormal("Afternoon");
