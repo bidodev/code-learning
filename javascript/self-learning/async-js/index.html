@@ -13,9 +13,29 @@
         }, 2500);
       });
 
+      const getRecipe = (recID) => {
+        return new Promise((resolve, reject) => {
+          setTimeout(
+            (ID) => {
+              const recipe = {
+                title: "fresh tomato pasta",
+                publisher: "some italian",
+              };
+              resolve(`${ID}: ${recipe.title}`);
+            },
+            2500,
+            recID
+          );
+        });
+      };
+
       getIDS
         .then((IDs) => {
           console.log(IDs);
+          return getRecipe(IDs[2]);
+        })
+        .then((recipe) => {
+          console.log(recipe);
         })
         .catch((error) => {
           console.log(error);
