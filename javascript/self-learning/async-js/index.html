@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const getIDS = new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve([520, 251, 2015, 3001]);
+        }, 2500);
+      });
+
+      getIDS
+        .then((IDs) => {
+          console.log(IDs);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    </script>
+  </body>
+</html>
