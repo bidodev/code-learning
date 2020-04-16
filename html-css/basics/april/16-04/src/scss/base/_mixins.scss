@@ -1,0 +1,12 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//mixin with arguments
+@mixin font-setup($name, $size, $weight) {
+  font-family: $name;
+  font-size: $size;
+  font-weight: $weight;
+}

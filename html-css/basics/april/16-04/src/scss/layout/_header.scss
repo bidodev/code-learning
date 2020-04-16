@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+//Example how to use image() function
+//background-image: image("header.jpg");
+header {
+  @include flex-center;
+  background-image: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.7)),
+    image("header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  @include font-setup("arial", 5rem, 500);
+}

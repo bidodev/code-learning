@@ -1,0 +1,31 @@
+{
+  "name": "sassy-mixin",
+  "version": "1.0.0",
+  "description": "Sassy Mixin",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p liveserver watch:styles",
+    "build": "run-s clean clean:styles build:styles prefix:css copy",
+    "deploy": "run-s build publish",
+    "liveserver": "live-server src",
+    "build:styles": "sass src/scss/main.scss:src/styles/style.css",
+    "watch:styles": "sass src/scss/main.scss:src/styles/style.css --watch",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles/style.css -o src/styles/style.css",
+    "clean": "rm -rf dist",
+    "clean:styles": "rm -rf src/styles",
+    "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
+    "publish": "gh-pages -d dist"
+  },
+  "author": "Bido",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "gh-pages": "^2.1.1",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^7.1.0",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
