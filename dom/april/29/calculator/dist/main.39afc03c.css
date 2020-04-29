@@ -22,7 +22,7 @@ body {
 
 .calc-screen {
   background: #3a4655;
-  width: 276px;
+  width: 100%;
   height: 150px;
   padding: 20px;
 }

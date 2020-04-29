@@ -118,7 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app.js":[function(require,module,exports) {
-var userInput = document.querySelector(".calc-operation");
+var userInput = document.querySelector(".calc-typed");
 var buttons = document.querySelectorAll(".calc-button-row");
 var values = [];
 var operations = [];
@@ -130,35 +130,18 @@ var clearInput = function clearInput() {
 var result = function result() {};
 
 function buttonsValue(event) {
-  var value = event.target.innerText;
-  var item = event.target;
-  console.log("Event target:", event.target);
-  console.log("Event target value:", value); //console.log("Value", value);
+  if (event.type == "click") {
+    console.log(event.target.innerText);
+    return;
+  }
+
+  if (event.type == "keypress") {
+    console.log(event.key);
+    return;
+  } //console.log("Value", value);
   //update GUI
-
-  userInput.textContent += value; //console.log(value);
-
-  switch (value) {
-    case "C":
-      clearInput();
-      break;
-
-    case "/":
-      values.push(userInput.value.slice(0, userInput.value.length - 1));
-      operations.push(userInput.value.slice(userInput.value.length - 1));
-      clearInput();
-      break;
-
-    case "x":
-      values.push(userInput.value.slice(0, userInput.value.length - 1));
-      operations.push(userInput.value.slice(userInput.value.length - 1));
-      clearInput();
-      break;
-
-    case "=":
-      result();
-      break;
-  } //   console.log("buttonsValue -> Values", values);
+  //userInput.textContent += value;
+  //   console.log("buttonsValue -> Values", values);
   //   console.log("buttonsValue -> Operations", operations);
 
 }
@@ -166,7 +149,8 @@ function buttonsValue(event) {
 buttons.forEach(function (row) {
   row.addEventListener("click", buttonsValue);
 });
-},{}],"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+document.body.addEventListener("keypress", buttonsValue);
+},{}],"../../../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -194,7 +178,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40723" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37275" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -370,5 +354,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
+},{}]},{},["../../../../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
 //# sourceMappingURL=/app.c328ef1a.js.map
