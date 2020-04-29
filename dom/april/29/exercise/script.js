@@ -10,34 +10,25 @@ function doMath(event) {
   const item = event.target;
   const button = event.keyCode;
 
-  if (item.className === "plus" || button === 43) {
-    const stNumber = firstNumber.value;
-    const ndNumber = secondNumber.value;
+  const stNumber = firstNumber.value;
+  const ndNumber = secondNumber.value;
 
+  if (item.className === "plus" || button === 43) {
     const result = stNumber + ndNumber;
 
     alert(`The plus result is ${result}`);
   }
   if (item.className === "times" || button === 42) {
-    const stNumber = firstNumber.value;
-    const ndNumber = secondNumber.value;
-
     const result = stNumber * ndNumber;
 
     alert(`The result is ${result}`);
   }
   if (item.className === "division" || button === 47) {
-    const stNumber = firstNumber.value;
-    const ndNumber = secondNumber.value;
-
     const result = stNumber / ndNumber;
 
     alert(`The result is ${result}`);
   }
   if (item.className === "minus" || button === 45) {
-    const stNumber = firstNumber.value;
-    const ndNumber = secondNumber.value;
-
     const result = stNumber - ndNumber;
 
     alert(`The result is ${result}`);

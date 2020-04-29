@@ -117,59 +117,55 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"script.js":[function(require,module,exports) {
-var operations = document.querySelector(".operations");
-var firstNumber = document.querySelector(".firstNumber");
-var secondNumber = document.querySelector(".secondNumber");
+})({"app.js":[function(require,module,exports) {
+var userInput = document.querySelector(".calc-operation");
+var buttons = document.querySelectorAll(".calc-button-row");
+var values = [];
+var operations = [];
 
-function doMath(event) {
-  //prevent form from submitting
-  //event.preventDefault();
-  //console.log(event);
+var clearInput = function clearInput() {
+  return userInput.textContent = "";
+};
+
+var result = function result() {};
+
+function buttonsValue(event) {
+  var value = event.target.innerText;
   var item = event.target;
-  var button = event.keyCode;
+  console.log("Event target:", event.target);
+  console.log("Event target value:", value); //console.log("Value", value);
+  //update GUI
 
-  if (item.className === "plus" || button === 43) {
-    var stNumber = firstNumber.value;
-    var ndNumber = secondNumber.value;
-    var result = stNumber + ndNumber;
-    alert("The plus result is ".concat(result));
-  }
+  userInput.textContent += value; //console.log(value);
 
-  if (item.className === "times" || button === 42) {
-    var _stNumber = firstNumber.value;
-    var _ndNumber = secondNumber.value;
+  switch (value) {
+    case "C":
+      clearInput();
+      break;
 
-    var _result = _stNumber * _ndNumber;
+    case "/":
+      values.push(userInput.value.slice(0, userInput.value.length - 1));
+      operations.push(userInput.value.slice(userInput.value.length - 1));
+      clearInput();
+      break;
 
-    alert("The result is ".concat(_result));
-  }
+    case "x":
+      values.push(userInput.value.slice(0, userInput.value.length - 1));
+      operations.push(userInput.value.slice(userInput.value.length - 1));
+      clearInput();
+      break;
 
-  if (item.className === "division" || button === 47) {
-    var _stNumber2 = firstNumber.value;
-    var _ndNumber2 = secondNumber.value;
+    case "=":
+      result();
+      break;
+  } //   console.log("buttonsValue -> Values", values);
+  //   console.log("buttonsValue -> Operations", operations);
 
-    var _result2 = _stNumber2 / _ndNumber2;
-
-    alert("The result is ".concat(_result2));
-  }
-
-  if (item.className === "minus" || button === 45) {
-    var _stNumber3 = firstNumber.value;
-    var _ndNumber3 = secondNumber.value;
-
-    var _result3 = _stNumber3 - _ndNumber3;
-
-    alert("The result is ".concat(_result3));
-  }
 }
 
-operations.addEventListener("click", doMath);
-document.body.addEventListener("keypress", doMath); //todo list
-// get the string from the input and convert into int.
-// clear the fields after result appears
-//change the logic on how it get the values and do the result
-// display the value in the UI instead of the alert shitty msg
+buttons.forEach(function (row) {
+  row.addEventListener("click", buttonsValue);
+});
 },{}],"../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -198,7 +194,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37739" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40723" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -374,5 +370,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
-//# sourceMappingURL=/script.75da7f30.js.map
+},{}]},{},["../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
+//# sourceMappingURL=/app.c328ef1a.js.map
