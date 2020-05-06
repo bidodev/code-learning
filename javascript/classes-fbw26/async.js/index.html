@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Async JavaScript</title>
+
+    <style>
+      .title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: #181818;
+      }
+
+      .sub-desc {
+        color: #7a2929;
+        margin-bottom: 1rem;
+      }
+
+      .description {
+        margin: 0 auto;
+        padding: 3rem;
+        width: 60vw;
+        color: #4d5156;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
     <h1>Async JavaScript</h1>
-    <button class="fetch-values">Fetch...</button>
+    <input
+      class="limit"
+      type="text"
+      value=""
+      placeholder="How many photos to fetch..."
+    />
+    <button class="fetch-values">Grab...</button>
     <div class="result">
       <!-- the result from the API -->
     </div>
@@ -102,20 +134,50 @@
       //     console.log(recipe);
       //   });
 
-      const showResults = () => {
-        // document.querySelector('result').innerHTML =
+      // element = {
+      //   albumId: 1,
+      //   id: 1,
+      //   title: "accusamus beatae ad facilis cum similique qui sunt",
+      //   url: "https://via.placeholder.com/600/92c952",
+      //   thumbnailUrl: "https://via.placeholder.com/150/92c952",
+      // };
+
+      const showResults = element => {
+        let = { albumId, id, title, url, thumbnailUrl } = element;
+
+        const markUp = `
+          <div class="description">
+            <div class="title">${title}</div>
+            <div class="sub-desc">Album: ${albumId} ‧ Foto: ${id}</div>
+
+            <figure class="composition">
+              <img src=${thumbnailUrl} alt=${title}>
+              <img src=${url} alt=${title}>
+            </figure>
+            
+          </div>`;
+
+        //insert the results
+        document
+          .querySelector(".result")
+          .insertAdjacentHTML("beforeend", markUp);
       };
 
       document.querySelector(".fetch-values").addEventListener("click", () => {
         //URL API
         const urlAPI = "https://jsonplaceholder.typicode.com/photos";
+        const limit = document.querySelector(".limit").value;
 
         //fetch values from the API.
         fetch(urlAPI)
           .then(result => {
             result.json().then(data => {
               //we received our data from the API.
-              console.log(data);
+              for (let i = 0; i < limit; i++) {
+                const element = data[i];
+
+                showResults(element);
+              }
             });
           })
           .catch(err => console.log(err));
