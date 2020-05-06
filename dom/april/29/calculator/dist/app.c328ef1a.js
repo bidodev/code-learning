@@ -119,31 +119,77 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"app.js":[function(require,module,exports) {
 var userInput = document.querySelector(".calc-typed");
+var calcOperation = document.querySelector(".calc-operation");
 var buttons = document.querySelectorAll(".calc-button-row");
-var values = [];
-var operations = [];
+var values = []; //const array1 = [1, 2, 3, 4];
+// expected output: 10
+
+var result = function result() {
+  var res = values[0];
+  values.forEach(function (element, index) {
+    switch (element) {
+      case "+":
+        res += values[index + 1];
+        break;
+
+      case "x":
+        res *= values[index + 1];
+        break;
+
+      case "-":
+        res -= values[index + 1];
+        break;
+
+      case "/":
+        res /= values[index + 1];
+        break;
+    }
+  });
+  return res;
+};
 
 var clearInput = function clearInput() {
   return userInput.textContent = "";
 };
 
-var result = function result() {};
-
 function buttonsValue(event) {
+  //1. get the value from the user either from the click or keyboard
   if (event.type == "click") {
-    console.log(event.target.innerText);
-    return;
+    value = event.target.innerText;
+    values.push(value); // if (values.length !== 3) {
+    //   values.push(value);
+    // } else {
+    //   result();
+    //   console.log("");
+    // }
+    // calcOperation.textContent += value;
+    // userInput.textContent += value;
+  } else if (event.type == "keypress") {
+    values.push(event.key); // if (!isNaN(event.key)) {
+    //   values.push(event.key);
+    // } else {
+    //   operations.push(event.key);
+    // }
+    //calcOperation.textContent += event.key;
   }
 
-  if (event.type == "keypress") {
-    console.log(event.key);
-    return;
-  } //console.log("Value", value);
+  console.log(values); //const teste = [66, "+", 10, "x", 10, "-", 10, "/", 10];
+  // switch (value) {
+  //   case "C":
+  //     clearInput();
+  //     break;
+  //   case "+":
+  //     result = values[0] + values[1];
+  //     // userInput.textContent = value;
+  //     break;
+  // }
+  //2. update the gui with this values
+  //3. give the result
+  //console.log("Value", value);
   //update GUI
-  //userInput.textContent += value;
+  //calcOperation.textContent += event.key;
   //   console.log("buttonsValue -> Values", values);
   //   console.log("buttonsValue -> Operations", operations);
-
 }
 
 buttons.forEach(function (row) {
@@ -178,7 +224,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37275" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41127" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async JavaScript</title>
+  </head>
+  <body>
+    <h1>Async JavaScript</h1>
+    <button class="fetch-values">Fetch...</button>
+    <div class="result">
+      <!-- the result from the API -->
+    </div>
+    <script>
+      // const second = () => {
+      //   setTimeout(() => {
+      //     console.log("Async hey there..");
+      //   }, 6000);
+      // };
+
+      // const first = () => {
+      //   console.log("Hey there..");
+      //   second();
+      //   console.log("The end");
+      // };
+      // first();
+
+      //call back hell
+      // function getRecipe() {
+      //   setTimeout(() => {
+      //     const recipeID = [520, 256, 355, 254];
+      //     console.log(recipeID);
+
+      //     setTimeout(
+      //       id => {
+      //         const recipe = {
+      //           tittle: "Fresh tomato Pasta",
+      //           publisher: "Jonas",
+      //         };
+      //         console.log(`${id}: ${recipe.tittle}`);
+      //         setTimeout(
+      //           publisher => {
+      //             const recipe = { title: "Italian Pizza" };
+      //             console.log(`${recipe.title}: ${publisher}`);
+      //           },
+      //           2000,
+      //           recipe.publisher
+      //         );
+      //       },
+      //       2000,
+      //       recipeID[2]
+      //     );
+      //   }, 2000);
+      // }
+      // getRecipe();
+
+      // const getIDs = new Promise((resolve, reject) => {
+      //   setTimeout(() => {
+      //     resolve([520, 256, 355, 254]);
+      //   }, 2000);
+      // });
+
+      // const getRecipe = recID => {
+      //   return new Promise((resolve, reject) => {
+      //     setTimeout(
+      //       id => {
+      //         const recipe = {
+      //           title: "Fresh Tomato Pasta",
+      //           publisher: "Jonas",
+      //         };
+      //         resolve(`${id}: ${recipe.title}`);
+      //       },
+      //       2000,
+      //       recID
+      //     );
+      //   });
+      // };
+
+      // const getRelated = publisher => {
+      //   return new Promise((resolve, reject) => {
+      //     setTimeout(
+      //       publisher => {
+      //         const recipe = { title: "Italian Pizza" };
+      //         resolve(`${publisher}: ${recipe.title}`);
+      //       },
+      //       2000,
+      //       publisher
+      //     );
+      //   });
+      // };
+
+      // getIDs
+      //   .then(IDs => {
+      //     console.log(IDs);
+      //     return getRecipe(IDs[1]);
+      //   })
+      //   .then(recipe => {
+      //     console.log(recipe);
+      //     return getRelated("Jonas");
+      //   })
+      //   .then(recipe => {
+      //     console.log(recipe);
+      //   });
+
+      const showResults = () => {
+        // document.querySelector('result').innerHTML =
+      };
+
+      document.querySelector(".fetch-values").addEventListener("click", () => {
+        //URL API
+        const urlAPI = "https://jsonplaceholder.typicode.com/photos";
+
+        //fetch values from the API.
+        fetch(urlAPI)
+          .then(result => {
+            result.json().then(data => {
+              //we received our data from the API.
+              console.log(data);
+            });
+          })
+          .catch(err => console.log(err));
+        //process the values from the API.
+        //return to the use
+      });
+    </script>
+  </body>
+</html>
