@@ -39,6 +39,14 @@
       value=""
       placeholder="How many photos to fetch..."
     />
+    <select class="add__type">
+      <option value="photos" selected>Photos</option>
+      <option value="users">Users</option>
+      <option value="todos">Todos</option>
+      <option value="albums">Albums</option>
+      <option value="posts">Posts</option>
+      <option value="comments">Comments</option>
+    </select>
     <button class="fetch-values">Grab...</button>
     <div class="result">
       <!-- the result from the API -->
@@ -142,6 +150,10 @@
       //   thumbnailUrl: "https://via.placeholder.com/150/92c952",
       // };
 
+      const DOMstrings = {
+        inputType: document.querySelector(".add__type"),
+      };
+
       const showResults = element => {
         let = { albumId, id, title, url, thumbnailUrl } = element;
 
@@ -158,16 +170,22 @@
           </div>`;
 
         //insert the results
+
         document
           .querySelector(".result")
           .insertAdjacentHTML("beforeend", markUp);
       };
 
       document.querySelector(".fetch-values").addEventListener("click", () => {
+        //clean the UI before call for new results...
+        document.querySelector(".result").innerHTML = "";
+
         //URL API
-        const urlAPI = "https://jsonplaceholder.typicode.com/photos";
+        const type = DOMstrings.inputType.value;
+        const urlAPI = `https://jsonplaceholder.typicode.com/${type}`;
         const limit = document.querySelector(".limit").value;
 
+        console.log(urlAPI);
         //fetch values from the API.
         fetch(urlAPI)
           .then(result => {
