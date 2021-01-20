@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "@dogstudio/highway": "^2.1.3",
-    "gsap": "^3.2.4"
+    "gsap": "^3.6.0"
   }
 }
